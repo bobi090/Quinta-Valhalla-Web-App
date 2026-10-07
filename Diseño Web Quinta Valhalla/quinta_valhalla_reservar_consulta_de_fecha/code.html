@@ -1,0 +1,626 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Reservar &amp; Consulta de Fecha | Quinta Valhalla Eventos</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-lowest": "#ffffff",
+            "secondary": "#725b38",
+            "on-tertiary": "#ffffff",
+            "surface-bright": "#fbf9f6",
+            "primary-container": "#1b3b2b",
+            "on-primary": "#ffffff",
+            "background": "#fbf9f6",
+            "secondary-fixed-dim": "#e0c298",
+            "on-primary-container": "#83a590",
+            "outline-variant": "#c1c8c2",
+            "tertiary-container": "#283920",
+            "secondary-fixed": "#fedeb2",
+            "on-tertiary-container": "#8fa382",
+            "surface-container-low": "#f5f3f0",
+            "on-error": "#ffffff",
+            "surface": "#fbf9f6",
+            "on-secondary-fixed-variant": "#584323",
+            "surface-variant": "#e4e2df",
+            "error": "#ba1a1a",
+            "tertiary-fixed-dim": "#b8cda9",
+            "outline": "#727973",
+            "surface-container": "#efeeeb",
+            "tertiary-fixed": "#d4e9c4",
+            "surface-container-high": "#eae8e5",
+            "on-secondary-container": "#78603e",
+            "inverse-surface": "#30312f",
+            "on-primary-fixed-variant": "#2d4d3c",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#281800",
+            "on-surface": "#1b1c1a",
+            "on-primary-fixed": "#002113",
+            "primary-fixed-dim": "#abcfb8",
+            "on-secondary": "#ffffff",
+            "inverse-on-surface": "#f2f0ed",
+            "on-tertiary-fixed-variant": "#3a4c31",
+            "surface-dim": "#dbdad7",
+            "inverse-primary": "#abcfb8",
+            "secondary-container": "#fedeb2",
+            "on-tertiary-fixed": "#0f1f09",
+            "on-background": "#1b1c1a",
+            "primary": "#032517",
+            "on-error-container": "#93000a",
+            "on-surface-variant": "#424843",
+            "surface-tint": "#456553",
+            "primary-fixed": "#c7ebd4",
+            "tertiary": "#13230c",
+            "surface-container-highest": "#e4e2df"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.375rem",
+            "space-sm": "0.75rem",
+            "margin": "3rem",
+            "space-lg": "2rem",
+            "margin-mobile": "1.25rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-md": "1.25rem",
+            "space-xl": "3.5rem"
+          },
+          "fontFamily": {
+            "title-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "display-xl-mobile": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "display-xl": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "display-xl-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "display-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style id="custom-cursor" type="text/css">body button, body [type='button'], body input[type='reset'], body input[type='submit'], body [role="button"], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-scrollbar-button, ::-webkit-file-upload-button, [role^=button], .cc_pointer, [type="search"]::-webkit-search-cancel-button, a, select, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, img,  ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon, body .custom-cursor-on-hover {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAACU0lEQVR4AYyTz2sTQRTHv7PZn2mxrTYJtbWiBw+K0oB6kYIKoicVb3pQ8CbePNqLF48VDPgHWPRgLkorihelUIWCBSl4UoQ2QYpNSGKabHZnd8c3u92YbSF02e++2Z35fua94a2C3ks8UlErvEa9sIpq4XjvVL9xEoKMCYg8BCbBgv39jL1zSUhli9EkgxDJ7/Sx3717sfQLlTwaaW/3Dsgo4FuAR1VJ7Y2BJKRKLpcg3MKgOzI2UVo4O7n2diQsr0+JSQgx4Kahcsu8oo4/vW0dnT+tZ5/c2Fh5NV1ansmvLx28WPoyDvFJ1itXh9oBoXI8A4Jb2nLLHntRr+aGxcCtfb557aQ6dP+8nn03pWbeXy9NHA7d248IIoqp7XeAm/BJJZuh3GFY/NvW39Rb2seGnVtqOKeK1eahSsel3boOKJfXvp+4W556cGf9x9UjPJcGTzMJkgpcA7/aDA1HxU+K35o+K9sKW2l6shW6FKXjsJlNB48PwJjLsuGbKW4aEhBLUFZSnmuCE5Q2Ebad7gLkQFlsOM8Wqu7vuT/24PTA8EPNt4ZiQDIaYangugA3PGmOpeBM/jO4dq9ip1rPNzqjwtUTmZCBzASgA0cokwDprRggY3Sw5459oAXzm22VO2HKZOKxTIKQqJwwM9d04fs1aY4VQRgLaMdZcKuFEEImOgt6jwByLDuYWwFtVkMqK9syZvR07KXMKi34Si3vUQRFEmUTlkBRZubpHXh6ERcYldRl9EBkNp4xS/9Ok7KiHXWSFslXA/ipAIFSIb38b49G/wAAAP//nuf3egAAAAZJREFUAwDrtPr/thodIQAAAABJRU5ErkJggg==") 5 0, pointer !important;} html,body,body select,body .custom-cursor-default-hover {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAACdklEQVR4AZyTTUhVQRTH/zP33pn35PU+fKaRFUn5VRkm4qtFvCxa1LJCihYtihKhfbTpQZtaBmGLaCNk9SLalCkt6plUigRBFNJCy4WV9j71fdw7c6dJcPM0MQ/DDMM558f/nDNDkbp1F9nbYSgQrNOoF8apCNmUqMz2RqBi5no4tEBc2wejqdtse9GS2tNdNXtvw/+CKJQqjjmztJ6GAle9bTe3u1ufNP4YqkM8bqwVRuEa+XlB8LAwTULgFdd9LdFWbHxd3159GNNvvWsBUUhPQUmuRvNZpKQLoijbYQZqo97N91sWKmINExNVGrRq0ykcTxGCI+MQ9GVmMO8qQBpGAHzjIV+4pw6sv3n86z6Mj1satuLS5bACBIPSoHfzC8gLBa5MmK4Jn7J8rdwXba/wP2h2tpyrHPjtX4lCITwl6HIgmVZj4lEqgxBhoNKAIw3pSir8lIcaGO8pGOZxxGK0HKQhzPmrBFqJEhZGMkVYimIqr3Lv007/8znnSiItz84IcrKG+QeBa+UMaAgvweGALgmSl7KOKQaTtqoymPxZovHP32p6P+0PvxyLBCenOkkaMeKizChsphvLNMSyIdmw7s2rRFLYYWoFtoFfqK3MBctyll2pTsxrFRrARyBwGsK6lCmavz6kFXZ7vVEL5lHE1aoPj2pADi4bBmgXDuxKwZ2c1mqG3swR23BpsJGz87UmgljFKBRLwJZn0NGUBCEKnZ0CrnEjXWLfv+QMtZMbHa6FE/p7kH9xKCLNz3Bwb2oRsBR1LDCppPV0NEmLCwKeagtH8BieJXf5uWzmiwGE6AnQOymBgb4ZXP7o4iK6SGHRt8L2BwAA//+uHDYYAAAABklEQVQDAH4k/SCYuu3FAAAAAElFTkSuQmCC") 0 0, auto !important;}</style></head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TOP APP BAR -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md dark:bg-surface-container-low/90 shadow-[0_8px_24px_-4px_rgba(27,59,43,0.05)] border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-6 lg:px-12 py-4 max-w-7xl mx-auto">
+<a class="flex items-center gap-3 group" href="#">
+<img alt="Quinta Valhalla Logo" class="h-10 w-10 object-contain rounded-full shadow-sm border border-secondary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJGyNlcNp_6v5IXUkPrw1I9Ylb6Ktgj7Wv5cCTb51ZxvraWPjbJlh3EUUI7BF6U5pqDgJwCmE85tgt739cbB1U5j_bKsYT3XadWRMFiN2T1_uR3rrOLuXmEyJ92btFnQ-zwEuJVQdjEohFpT9QGVFWUNzGicOeCjBGvQN3VyhE7lOLq8xprG6IygU7l5B--X3Fy1FlhOO7sCiUu33N-n-TshHtpi11fOAwUUMFc0eLf03A60jv0DKns-1su4vFihPC">
+
+</a>
+<nav class="hidden md:flex items-center gap-8"><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors font-medium" href="#la-quinta">La Quinta</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors font-medium" href="#espacios">Espacios</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors font-medium" href="#eventos">Eventos</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors font-medium" href="#galeria">Galería</a><a class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold border-b-2 border-secondary pb-1" href="#reservar">Reservar</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors font-medium" href="#opiniones">Opiniones</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors font-medium" href="#contacto">Contacto</a></nav>
+<div class="flex items-center gap-3"><a class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container shadow-md transition-all duration-300 active:scale-95" href="https://wa.me/5491100000000?text=Hola Quinta Valhalla! Deseo consultar la disponibilidad para mi evento:%0A• *Tipo de Evento:* Boda%20So%C3%B1ada%0A• *Temporada:* Primavera%20%2F%20Verano%202025%0A• *Cantidad de Invitados:* 80%20a%20150%20invitados%0A• *Momento:* Tarde%20%2F%20Noche%20al%20Atardecer%20(17%3A00%20a%2005%3A00%20hs)%0A• *Fecha Tentativa:* S%C3%A1bado%2015%20de%20Noviembre%0A%0A¿Podríamos coordinar una visita personalizada y conocer las condiciones de reserva? Muchas gracias!" id="btn-header-wa" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span class="">WhatsApp</span></a><button id="mobile-menu-btn" type="button" aria-label="Abrir menú" class="md:hidden flex items-center justify-center w-10 h-10 rounded-full border border-secondary/25 bg-surface-container text-primary hover:bg-primary hover:text-white transition-all duration-200"><span class="material-symbols-outlined text-2xl">menu</span></button></div>
+</div>
+</header><div id="mobile-drawer" class="fixed inset-0 z-50 hidden transition-all duration-300"><div id="mobile-drawer-backdrop" class="fixed inset-0 bg-primary/70 backdrop-blur-md"></div><div class="fixed top-0 right-0 h-full w-full max-w-xs bg-surface shadow-2xl p-6 flex flex-col justify-between overflow-y-auto border-l border-secondary/20 z-10"><div class="space-y-6"><div><div class="flex items-center justify-between pb-4 border-b border-outline-variant/30"><div class="flex items-center gap-2"><img alt="Quinta Valhalla" class="h-8 w-8 object-contain rounded-full border border-secondary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJGyNlcNp_6v5IXUkPrw1I9Ylb6Ktgj7Wv5cCTb51ZxvraWPjbJlh3EUUI7BF6U5pqDgJwCmE85tgt739cbB1U5j_bKsYT3XadWRMFiN2T1_uR3rrOLuXmEyJ92btFnQ-zwEuJVQdjEohFpT9QGVFWUNzGicOeCjBGvQN3VyhE7lOLq8xprG6IygU7l5B--X3Fy1FlhOO7sCiUu33N-n-TshHtpi11fOAwUUMFc0eLf03A60jv0DKns-1su4vFihPC"><span class="font-headline-sm text-lg font-semibold text-primary">Quinta Valhalla</span></div><button id="mobile-drawer-close" type="button" aria-label="Cerrar menú" class="w-9 h-9 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-2xl">close</span></button></div></div><nav class="flex flex-col space-y-1"><a class="mobile-nav-link flex items-center px-4 py-3 rounded-xl font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" href="#la-quinta">1. La Quinta</a><a class="mobile-nav-link flex items-center px-4 py-3 rounded-xl font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" href="#espacios">2. Espacios</a><a class="mobile-nav-link flex items-center px-4 py-3 rounded-xl font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" href="#eventos">3. Eventos</a><a class="mobile-nav-link flex items-center px-4 py-3 rounded-xl font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" href="#galeria">4. Galería</a><a class="mobile-nav-link flex items-center justify-between px-4 py-3 rounded-xl font-label-md text-label-md uppercase tracking-wider bg-primary/10 text-primary font-bold border border-secondary/40" href="#reservar"><span class="">5. Reservar</span><span class="material-symbols-outlined text-sm">check_circle</span></a><a class="mobile-nav-link flex items-center px-4 py-3 rounded-xl font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" href="#opiniones">6. Opiniones</a><a class="mobile-nav-link flex items-center px-4 py-3 rounded-xl font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:bg-surface-container hover:text-primary transition-colors" href="#contacto">7. Contacto</a></nav></div><div class="pt-6 border-t border-outline-variant/30 space-y-3"><a class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider hover:bg-primary-container shadow-md transition-all" href="https://wa.me/5491100000000?text=Hola Quinta Valhalla! Deseo consultar la disponibilidad para mi evento:%0A• *Tipo de Evento:* Boda%20So%C3%B1ada%0A• *Temporada:* Primavera%20%2F%20Verano%202025%0A• *Cantidad de Invitados:* 80%20a%20150%20invitados%0A• *Momento:* Tarde%20%2F%20Noche%20al%20Atardecer%20(17%3A00%20a%2005%3A00%20hs)%0A• *Fecha Tentativa:* S%C3%A1bado%2015%20de%20Noviembre%0A%0A¿Podríamos coordinar una visita personalizada y conocer las condiciones de reserva? Muchas gracias!" target="_blank"><span class="material-symbols-outlined text-lg">chat</span><span class="">WhatsApp Directo</span></a><p class="text-center text-xs text-outline font-label-sm uppercase tracking-wider">1 solo evento por día</p></div></div></div>
+<main class="pt-24 lg:pt-28">
+<!-- PRIMORDIAL STATEMENT BANNER -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 mt-6">
+<div class="relative overflow-hidden rounded-2xl bg-surface-container border border-secondary/20 p-6 lg:p-8 shadow-[0_8px_24px_-4px_rgba(27,59,43,0.05)]">
+<div class="flex flex-col md:flex-row items-start md:items-center gap-5">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Compromiso de Exclusividad &amp; Calidez Humana</span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              En <strong class="font-semibold text-primary">Quinta Valhalla</strong> no operamos con cobros automáticos ni señas impersonales. La reserva se construye mediante el <span class="text-primary font-semibold">diálogo directo y visitas personalizadas</span> para garantizar la exclusividad absoluta (<strong class="text-secondary font-semibold">solo 1 evento por día</strong>).
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- HERO SECTION -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-12 lg:py-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-7 space-y-6">
+
+<h1 class="font-display-xl text-display-xl lg:text-[54px] lg:leading-[62px] text-primary">
+            Planificá tu Celebración Soñada
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Consultá la disponibilidad de tu fecha especial y coordinemos una atención dedicada paso a paso. Diseñado para momentos irrepetibles rodeados de 10.000 m² de naturaleza viva.
+          </p>
+<!-- HIGHLIGHT CHIPS -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+<div class="flex items-center gap-2 p-3 rounded-xl bg-surface-container-low border border-secondary/15">
+<span class="material-symbols-outlined text-primary text-xl">park</span>
+<span class="font-label-md text-label-md text-on-surface">10.000 m² Privados</span>
+</div>
+<div class="flex items-center gap-2 p-3 rounded-xl bg-surface-container-low border border-secondary/15">
+<span class="material-symbols-outlined text-primary text-xl">hotel_class</span>
+<span class="font-label-md text-label-md text-on-surface">1 Solo Evento/Día</span>
+</div>
+<div class="flex items-center gap-2 p-3 rounded-xl bg-surface-container-low border border-secondary/15">
+<span class="material-symbols-outlined text-primary text-xl">favorite</span>
+<span class="font-label-md text-label-md text-on-surface">Sin Canon de Proveedor</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5">
+<div class="relative p-2 rounded-3xl bg-surface-container-high/60 border border-secondary/25 shadow-[0_20px_40px_-8px_rgba(27,59,43,0.10)]">
+<div class="overflow-hidden rounded-2xl aspect-[4/3] relative">
+<img class="w-full h-full object-cover" data-alt="A luxurious outdoor wedding dinner setup in a lush botanical garden at twilight, with twinkling warm fairy lights and white floral runners along rustic wooden banquet tables, conveying high-end natural luxury and serenity under ancient eucalyptus trees." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgj7Gcp-eyuc5LPal3ijQcWaOmxvQr2EL8cq7N76UuG050mAuqpPxzRgaFe8XchANGA5PsIttX7Jl3W8l9fA9fSAakzVYz8j0y7Hdgn8TE3K-XgPkeZZUS6iosprhVXMfC2wXezEJKDdNAUwgH3quCG7QDz36YkUFsmi5_exzbc6Kll3312X2IMrKu9SojXhHq-dZi04Dj-4z1ULx6z_h0HYRMWEzFZDQn4Vd4XwFKHVknYtK4M1Q">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 text-white">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed">Parque Botánico Valhalla</span>
+<p class="font-headline-sm text-headline-sm text-surface-bright">Atardeceres infinitos &amp; galerías coloniales</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE STEP-BY-STEP DATE CONSULTATION MODULE -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-10" id="consulta-step">
+<div class="bg-surface-container-lowest rounded-3xl border border-secondary/25 shadow-[0_20px_40px_-8px_rgba(27,59,43,0.08)] p-6 md:p-10 lg:p-12">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Configurador de Evento</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Personalizá tu Consulta en 4 Pasos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+            Completá tus preferencias para generar de inmediato un resumen formal que enviaremos a nuestro equipo de coordinación por WhatsApp.
+          </p>
+</div>
+<div class="space-y-12">
+<!-- PASO 1: Temporada y Tipo de Evento -->
+<div>
+<div class="flex items-center gap-3 mb-4">
+<span class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-bold">1</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Temporada y Tipo de Celebración</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Tipo -->
+<div class="md:col-span-7 space-y-2">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant block">Tipo de Evento</label>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5" id="group-event-type">
+<button class="btn-select active border-2 border-primary bg-primary/5 text-primary p-3 rounded-xl font-label-md text-label-md text-center transition-all flex flex-col items-center gap-1" data-value="Boda Soñada" type="button">
+<span class="material-symbols-outlined text-xl">favorite</span>
+<span class="">Boda</span>
+</button>
+<button class="btn-select border border-outline-variant bg-surface p-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:border-primary hover:text-primary transition-all flex flex-col items-center gap-1" data-value="Fiesta de 15 Años" type="button">
+<span class="material-symbols-outlined text-xl">celebration</span>
+<span class="">15 Años</span>
+</button>
+<button class="btn-select border border-outline-variant bg-surface p-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:border-primary hover:text-primary transition-all flex flex-col items-center gap-1" data-value="Jornada Corporativa" type="button">
+<span class="material-symbols-outlined text-xl">domain</span>
+<span class="">Corporativo</span>
+</button>
+<button class="btn-select border border-outline-variant bg-surface p-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:border-primary hover:text-primary transition-all flex flex-col items-center gap-1" data-value="Reunión Familiar / Aniversario" type="button">
+<span class="material-symbols-outlined text-xl">groups</span>
+<span class="">Familiar</span>
+</button>
+<button class="btn-select border border-outline-variant bg-surface p-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:border-primary hover:text-primary transition-all flex flex-col items-center gap-1" data-value="Otro Evento Exclusivo" type="button">
+<span class="material-symbols-outlined text-xl">auto_awesome</span>
+<span class="">Otro</span>
+</button>
+</div>
+</div>
+<!-- Temporada / Año -->
+<div class="md:col-span-5 space-y-2">
+<label class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant block">Temporada Prevista</label>
+<div class="grid grid-cols-2 gap-2.5" id="group-season">
+<button class="btn-select active border-2 border-primary bg-primary/5 text-primary p-3 rounded-xl font-label-md text-label-md text-center transition-all flex flex-col items-center gap-1" data-value="Primavera / Verano 2025" type="button">
+<span class="material-symbols-outlined text-xl">sunny</span>
+<span class="">Primavera/Verano '25</span>
+</button>
+<button class="btn-select border border-outline-variant bg-surface p-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:border-primary hover:text-primary transition-all flex flex-col items-center gap-1" data-value="Otoño / Invierno 2025" type="button">
+<span class="material-symbols-outlined text-xl">nature</span>
+<span class="">Otoño/Invierno '25</span>
+</button>
+<button class="btn-select border border-outline-variant bg-surface p-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:border-primary hover:text-primary transition-all flex flex-col items-center gap-1" data-value="Primavera / Verano 2026" type="button">
+<span class="material-symbols-outlined text-xl">filter_vintage</span>
+<span class="">Primavera/Verano '26</span>
+</button>
+<button class="btn-select border border-outline-variant bg-surface p-3 rounded-xl font-label-md text-label-md text-on-surface-variant hover:border-primary hover:text-primary transition-all flex flex-col items-center gap-1" data-value="Fecha Inmediata (Próximos 90 días)" type="button">
+<span class="material-symbols-outlined text-xl">alarm</span>
+<span class="">Próximos 90 días</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="h-px bg-outline-variant/30"></div>
+<!-- PASO 2: Cantidad de Invitados -->
+<div>
+<div class="flex items-center gap-3 mb-4">
+<span class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-bold">2</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Estimación Aproximada de Invitados</h3>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="group-guests">
+<button class="btn-select border border-outline-variant bg-surface hover:border-primary p-4 rounded-xl font-label-md text-label-md text-on-surface-variant flex flex-col items-center gap-1 transition-all" data-value="Menos de 80 invitados" type="button">
+<span class="font-title-md text-title-md font-bold text-primary">&lt; 80</span>
+<span class="text-xs text-outline">Íntimo &amp; Selecto</span>
+</button>
+<button class="btn-select active border-2 border-primary bg-primary/5 p-4 rounded-xl font-label-md text-label-md text-primary flex flex-col items-center gap-1 transition-all" data-value="80 a 150 invitados" type="button">
+<span class="font-title-md text-title-md font-bold text-primary">80 - 150</span>
+<span class="text-xs text-outline">Formato Mediano</span>
+</button>
+<button class="btn-select border border-outline-variant bg-surface hover:border-primary p-4 rounded-xl font-label-md text-label-md text-on-surface-variant flex flex-col items-center gap-1 transition-all" data-value="150 a 250 invitados" type="button">
+<span class="font-title-md text-title-md font-bold text-primary">150 - 250</span>
+<span class="text-xs text-outline">Gran Convocatoria</span>
+</button>
+<button class="btn-select border border-outline-variant bg-surface hover:border-primary p-4 rounded-xl font-label-md text-label-md text-on-surface-variant flex flex-col items-center gap-1 transition-all" data-value="250 a 350 invitados" type="button">
+<span class="font-title-md text-title-md font-bold text-primary">250 - 350</span>
+<span class="text-xs text-outline">Capacidad Máxima</span>
+</button>
+</div>
+</div>
+<div class="h-px bg-outline-variant/30"></div>
+<!-- PASO 3: Momento del Día -->
+<div>
+<div class="flex items-center gap-3 mb-4">
+<span class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-bold">3</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Momento Preferido</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="group-timing">
+<button class="btn-select border border-outline-variant bg-surface hover:border-primary p-4 rounded-2xl text-left transition-all" data-value="Mediodía Campestre (11:00 a 19:00 hs)" type="button">
+<div class="flex items-center gap-2 text-secondary mb-1">
+<span class="material-symbols-outlined">wb_sunny</span>
+<span class="font-title-md text-title-md text-primary">Mediodía Campestre</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Luz natural plena, asado de autor o cóctel en pérgola bajo arboleda centenaria.</p>
+</button>
+<button class="btn-select active border-2 border-primary bg-primary/5 p-4 rounded-2xl text-left transition-all" data-value="Tarde / Noche al Atardecer (17:00 a 05:00 hs)" type="button">
+<div class="flex items-center gap-2 text-secondary mb-1">
+<span class="material-symbols-outlined">wb_twilight</span>
+<span class="font-title-md text-title-md text-primary">Tarde / Noche al Atardecer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Recepción con golden hour, ceremonia al aire libre y fiesta bajo cielo estrellado.</p>
+</button>
+<button class="btn-select border border-outline-variant bg-surface hover:border-primary p-4 rounded-2xl text-left transition-all" data-value="Jornada Completa Día y Noche" type="button">
+<div class="flex items-center gap-2 text-secondary mb-1">
+<span class="material-symbols-outlined">all_inclusive</span>
+<span class="font-title-md text-title-md text-primary">Jornada Completa</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Uso integral durante todo el día, preparación en suites privadas y extensión total.</p>
+</button>
+</div>
+</div>
+<div class="h-px bg-outline-variant/30"></div>
+<!-- PASO 4: Calendario Visual Orientativo -->
+<div>
+<div class="flex items-center justify-between flex-wrap gap-4 mb-4">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-bold">4</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Calendario Visual Orientativo</h3>
+</div>
+<div class="flex items-center gap-4 text-xs font-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-emerald-600"></span>
+<span class="text-on-surface-variant">Fin de semana disponible</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-rose-400"></span>
+<span class="text-on-surface-variant">Reservado</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="text-on-surface-variant">Fecha seleccionada</span>
+</div>
+</div>
+</div>
+<!-- Calendario Estilizado -->
+<div class="bg-surface-container-low p-6 rounded-2xl border border-outline-variant/40 max-w-3xl mx-auto">
+<div class="flex items-center justify-between pb-4 mb-4 border-b border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">calendar_month</span>
+<span class="font-title-md text-title-md text-primary" id="cal-month-label">Noviembre 2025</span>
+</div>
+<span class="text-xs bg-surface-container px-3 py-1 rounded-full text-secondary font-medium">1 Evento por día garantizado</span>
+</div>
+<div class="grid grid-cols-7 text-center font-label-sm text-label-sm text-outline mb-2 uppercase tracking-wider">
+<span class="">Lun</span>
+<span class="">Mar</span>
+<span class="">Mié</span>
+<span class="">Jue</span>
+<span class="">Vie</span>
+<span class="text-primary font-bold">Sáb</span>
+<span class="text-primary font-bold">Dom</span>
+</div>
+<div class="grid grid-cols-7 gap-1.5 text-center text-sm" id="cal-days-grid">
+<!-- Semana vacía inicio -->
+<span class="p-2 text-outline/40">27</span>
+<span class="p-2 text-outline/40">28</span>
+<span class="p-2 text-outline/40">29</span>
+<span class="p-2 text-outline/40">30</span>
+<span class="p-2 text-outline/40">31</span>
+<button class="cal-day p-2 rounded-lg bg-rose-50 text-rose-400 cursor-not-allowed font-medium" data-day="Sábado 1 de Noviembre" title="Reservado" type="button">1</button>
+<button class="cal-day p-2 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-primary hover:text-white font-semibold transition-all" data-day="Domingo 2 de Noviembre" type="button">2</button>
+<!-- Semana 2 -->
+<span class="p-2 text-on-surface-variant">3</span>
+<span class="p-2 text-on-surface-variant">4</span>
+<span class="p-2 text-on-surface-variant">5</span>
+<span class="p-2 text-on-surface-variant">6</span>
+<button class="cal-day p-2 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-primary hover:text-white font-semibold transition-all" data-day="Viernes 7 de Noviembre" type="button">7</button>
+<button class="cal-day p-2 rounded-lg bg-rose-50 text-rose-400 cursor-not-allowed font-medium" data-day="Sábado 8 de Noviembre" title="Reservado" type="button">8</button>
+<button class="cal-day p-2 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-primary hover:text-white font-semibold transition-all" data-day="Domingo 9 de Noviembre" type="button">9</button>
+<!-- Semana 3 -->
+<span class="p-2 text-on-surface-variant">10</span>
+<span class="p-2 text-on-surface-variant">11</span>
+<span class="p-2 text-on-surface-variant">12</span>
+<span class="p-2 text-on-surface-variant">13</span>
+<button class="cal-day p-2 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-primary hover:text-white font-semibold transition-all" data-day="Viernes 14 de Noviembre" type="button">14</button>
+<button class="cal-day active-cal p-2 rounded-lg bg-primary text-white font-semibold ring-2 ring-secondary ring-offset-2" data-day="Sábado 15 de Noviembre" type="button">15</button>
+<button class="cal-day p-2 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-primary hover:text-white font-semibold transition-all" data-day="Domingo 16 de Noviembre" type="button">16</button>
+<!-- Semana 4 -->
+<span class="p-2 text-on-surface-variant">17</span>
+<span class="p-2 text-on-surface-variant">18</span>
+<span class="p-2 text-on-surface-variant">19</span>
+<span class="p-2 text-on-surface-variant">20</span>
+<button class="cal-day p-2 rounded-lg bg-rose-50 text-rose-400 cursor-not-allowed font-medium" data-day="Viernes 21 de Noviembre" title="Reservado" type="button">21</button>
+<button class="cal-day p-2 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-primary hover:text-white font-semibold transition-all" data-day="Sábado 22 de Noviembre" type="button">22</button>
+<button class="cal-day p-2 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-primary hover:text-white font-semibold transition-all" data-day="Domingo 23 de Noviembre" type="button">23</button>
+<!-- Semana 5 -->
+<span class="p-2 text-on-surface-variant">24</span>
+<span class="p-2 text-on-surface-variant">25</span>
+<span class="p-2 text-on-surface-variant">26</span>
+<span class="p-2 text-on-surface-variant">27</span>
+<button class="cal-day p-2 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-primary hover:text-white font-semibold transition-all" data-day="Viernes 28 de Noviembre" type="button">28</button>
+<button class="cal-day p-2 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-primary hover:text-white font-semibold transition-all" data-day="Sábado 29 de Noviembre" type="button">29</button>
+<button class="cal-day p-2 rounded-lg bg-rose-50 text-rose-400 cursor-not-allowed font-medium" data-day="Domingo 30 de Noviembre" title="Reservado" type="button">30</button>
+</div>
+<div class="mt-4 pt-3 border-t border-outline-variant/30 flex items-center justify-between text-xs text-on-surface-variant">
+<span id="selected-date-display" class="">Fecha tentativa elegida: <strong class="text-primary font-bold">Sábado 15 de Noviembre</strong></span>
+<span class="italic text-secondary">*Sujeto a confirmación por agenda oficial.</span>
+</div>
+</div>
+</div>
+<div class="h-px bg-outline-variant/30"></div>
+<!-- RESUMEN EN VIVO & BOTÓN GENERADOR WHATSAPP -->
+<div class="p-6 rounded-2xl bg-surface-container border border-secondary/30">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Resumen de tu Consulta</span>
+<div class="flex flex-wrap gap-2 text-xs font-body-sm text-on-surface">
+<span class="bg-surface px-3 py-1 rounded-full border border-secondary/20" id="badge-tipo">Evento: <strong>Boda Soñada</strong></span>
+<span class="bg-surface px-3 py-1 rounded-full border border-secondary/20" id="badge-temporada">Temporada: <strong>Primavera / Verano 2025</strong></span>
+<span class="bg-surface px-3 py-1 rounded-full border border-secondary/20" id="badge-invitados">Invitados: <strong>80 a 150 invitados</strong></span>
+<span class="bg-surface px-3 py-1 rounded-full border border-secondary/20" id="badge-momento">Momento: <strong>Tarde / Noche al Atardecer</strong></span>
+<span class="bg-surface px-3 py-1 rounded-full border border-secondary/20" id="badge-fecha">Fecha: <strong>Sábado 15 de Noviembre</strong></span>
+</div>
+</div>
+<a class="w-full lg:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-primary hover:bg-[#153123] text-surface-bright font-title-md text-title-md shadow-lg shadow-primary/20 transition-all duration-300 transform hover:scale-[1.02] active:scale-95 text-center" href="https://wa.me/5491100000000?text=Hola Quinta Valhalla! Deseo consultar la disponibilidad para mi evento:%0A• *Tipo de Evento:* Boda%20So%C3%B1ada%0A• *Temporada:* Primavera%20%2F%20Verano%202025%0A• *Cantidad de Invitados:* 80%20a%20150%20invitados%0A• *Momento:* Tarde%20%2F%20Noche%20al%20Atardecer%20(17%3A00%20a%2005%3A00%20hs)%0A• *Fecha Tentativa:* S%C3%A1bado%2015%20de%20Noviembre%0A%0A¿Podríamos coordinar una visita personalizada y conocer las condiciones de reserva? Muchas gracias!" id="btn-submit-wa" target="_blank">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="">Enviar Consulta a WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- POLÍTICAS CLARAS Y TRANQUILIDAD TOTAL -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-16">
+<div class="text-center max-w-2xl mx-auto mb-12">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Transparencia &amp; Seguridad</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Políticas Claras y Tranquilidad Total</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Sin sorpresas ni cargos ocultos de última hora. Nuestro compromiso es que disfruten de la planificación con absoluta serenidad.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Tarjeta 1 -->
+<div class="p-6 rounded-2xl bg-surface-container-low border border-secondary/25 hover:shadow-[0_20px_40px_-8px_rgba(27,59,43,0.08)] transition-all">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-2">Reserva Exclusiva</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Garantizamos 1 único evento por fecha en todo el predio de 10.000 m². Las instalaciones, jardines y suites serán 100% de ustedes y sus invitados.
+          </p>
+</div>
+<!-- Tarjeta 2 -->
+<div class="p-6 rounded-2xl bg-surface-container-low border border-secondary/25 hover:shadow-[0_20px_40px_-8px_rgba(27,59,43,0.08)] transition-all">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-2xl">lock_open</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-2">Sin Canon de Proveedores</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Libertad total para contratar el catering, fotógrafo, ambientador o DJ de su preferencia sin cobros de exclusividad ni comisiones abusivas.
+          </p>
+</div>
+<!-- Tarjeta 3 -->
+<div class="p-6 rounded-2xl bg-surface-container-low border border-secondary/25 hover:shadow-[0_20px_40px_-8px_rgba(27,59,43,0.08)] transition-all">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-2xl">wb_cloudy</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-2">Flexibilidad Climática</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Galerías cubiertas de gran porte y planes de contingencia previstos. Cláusulas claras de resguardo de fecha ante imprevistos mayores.
+          </p>
+</div>
+<!-- Tarjeta 4 -->
+<div class="p-6 rounded-2xl bg-surface-container-low border border-secondary/25 hover:shadow-[0_20px_40px_-8px_rgba(27,59,43,0.08)] transition-all">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-2xl">handshake</span>
+</div>
+<h3 class="font-title-md text-title-md text-primary mb-2">Acompañamiento Cercano</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Desde la firma del acuerdo hasta el desmontaje posterior al festejo: un anfitrión de la quinta estará disponible para asistir la logística técnica.
+          </p>
+</div>
+</div>
+</section>
+<!-- PREGUNTAS FRECUENTES SOBRE RESERVA Y PAGO -->
+<section class="max-w-4xl mx-auto px-6 lg:px-12 py-12">
+<div class="text-center mb-10">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Dudas Habituales</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-1">Preguntas Frecuentes sobre la Reserva</h2>
+</div>
+<div class="space-y-4">
+<details class="group bg-surface-container-low rounded-2xl border border-secondary/20 p-5 open:bg-surface-container transition-all">
+<summary class="flex justify-between items-center cursor-pointer font-title-md text-title-md text-primary list-none">
+<span class="">¿Cómo se bloquea formalmente la fecha elegida?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/20 pt-3">
+            Tras coordinar una visita presencial y acordar los alcances del evento, se firma un contrato de exclusividad y se abona la seña inicial (transferencia bancaria o efectivo). Con ello, la fecha queda automáticamente cerrada en agenda para ustedes.
+          </div>
+</details>
+<details class="group bg-surface-container-low rounded-2xl border border-secondary/20 p-5 open:bg-surface-container transition-all">
+<summary class="flex justify-between items-center cursor-pointer font-title-md text-title-md text-primary list-none">
+<span class="">¿Cuál es el esquema de pago de la seña y saldo?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/20 pt-3">
+            El esquema clásico contempla una seña de confirmación del 30% a 40%, cuotas fijadas en el cronograma hasta 30 días previos a la fecha del evento, y la cancelación final antes del ingreso de proveedores.
+          </div>
+</details>
+<details class="group bg-surface-container-low rounded-2xl border border-secondary/20 p-5 open:bg-surface-container transition-all">
+<summary class="flex justify-between items-center cursor-pointer font-title-md text-title-md text-primary list-none">
+<span class="">¿Se puede coordinar una visita antes de definir la fecha?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/20 pt-3">
+            ¡Totalmente recomendada! Abrimos las puertas para recorridos privados con cita previa los fines de semana por la mañana o días de semana, con el fin de que vivan la atmósfera del parque con luz natural.
+          </div>
+</details>
+<details class="group bg-surface-container-low rounded-2xl border border-secondary/20 p-5 open:bg-surface-container transition-all">
+<summary class="flex justify-between items-center cursor-pointer font-title-md text-title-md text-primary list-none">
+<span class="">¿Tienen proveedores sugeridos si aún no contraté ninguno?</span>
+<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="mt-3 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/20 pt-3">
+            Sí. Disponemos de un directorio curado de servicios premium de confianza (catering gourmet, barras de autor, técnica, sonido, ambientación) que conocen las instalaciones a la perfección. La elección es 100% suya.
+          </div>
+</details>
+</div>
+</section>
+</main>
+<!-- BOTÓN FLOTANTE WHATSAPP LIMPIO -->
+<a aria-label="Escribir a WhatsApp" class="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-4 py-3 bg-[#1B3B2B] text-[#FAF8F5] rounded-full shadow-[0_8px_24px_-4px_rgba(27,59,43,0.3)] hover:shadow-[0_12px_28px_-4px_rgba(27,59,43,0.4)] hover:scale-105 transition-all duration-300 border border-secondary/30 group" href="https://wa.me/5491100000000?text=Hola%20Quinta%20Valhalla,%20deseo%20consultar%20por%20fechas%20disponibles." id="fab-whatsapp" target="_blank">
+<span class="material-symbols-outlined text-2xl text-secondary-fixed" style="font-variation-settings: 'FILL' 1;">chat</span>
+<span class="font-label-md text-label-md tracking-wider font-semibold pr-1">Consultar WhatsApp</span>
+</a>
+<!-- INSTITUTIONAL FOOTER -->
+<footer class="w-full bg-surface-container border-t border-outline-variant/30"><div class="flex flex-col max-w-7xl mx-auto px-6 lg:px-12 py-16 gap-8"><div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-outline-variant/20"><div class="flex items-center gap-3"><img alt="Quinta Valhalla" class="h-12 w-12 object-contain rounded-full border border-secondary/20 bg-surface-container-lowest p-1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM-U-s8m_GTyWJTlldF_h3djkoZ7gsIZ0pjGGwwMqM0Dk-oCKhS0kifnbvIEc1oeN_1dLR_RDsTDM3aiRao3xbzR-ZcebnWx8kndlqjRGhqVlsx9vbi9jMPRVkG5cZi0hC0MFFyQfjm5rnWoto-Ij6gLOEckbaiWFEHTPVnoHEhNhYYf0BK-RlgZPYqxgbnmg25o-edD0wx84BCd0DAb78TeGA4gnQsT1Qn5vkVa4rckzczK4gpKbJe83ISQNPL9EJ"><div><span class="font-headline-sm text-headline-sm font-semibold text-primary block">Quinta Valhalla</span><span class="text-xs text-on-surface-variant font-body-sm">Estancia &amp; Eventos Exclusivos</span></div></div><div class="flex items-center flex-wrap gap-2.5"><a class="w-10 h-10 rounded-full bg-surface-container-low border border-secondary/25 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-200 shadow-sm" href="https://wa.me/5491100000000" target="_blank" title="WhatsApp" aria-label="WhatsApp"><span class="material-symbols-outlined text-xl">chat</span></a><a class="w-10 h-10 rounded-full bg-surface-container-low border border-secondary/25 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-200 shadow-sm" href="#" title="Instagram" aria-label="Instagram"><span class="material-symbols-outlined text-xl">photo_camera</span></a><a class="w-10 h-10 rounded-full bg-surface-container-low border border-secondary/25 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-200 shadow-sm" href="#" title="Facebook" aria-label="Facebook"><span class="material-symbols-outlined text-xl">public</span></a><a class="w-10 h-10 rounded-full bg-surface-container-low border border-secondary/25 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-200 shadow-sm" href="#" title="TikTok" aria-label="TikTok"><span class="material-symbols-outlined text-xl">music_note</span></a><a class="w-10 h-10 rounded-full bg-surface-container-low border border-secondary/25 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-200 shadow-sm" href="#" title="YouTube" aria-label="YouTube"><span class="material-symbols-outlined text-xl">smart_display</span></a><a class="w-10 h-10 rounded-full bg-surface-container-low border border-secondary/25 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-200 shadow-sm" href="#" title="Pinterest" aria-label="Pinterest"><span class="material-symbols-outlined text-xl">push_pin</span></a><a class="w-10 h-10 rounded-full bg-surface-container-low border border-secondary/25 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all duration-200 shadow-sm" href="mailto:contacto@quintavalhalla.com" title="Email" aria-label="Email"><span class="material-symbols-outlined text-xl">mail</span></a></div></div><div class="flex flex-wrap items-center justify-center md:justify-start gap-x-8 gap-y-3 font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#la-quinta">La Quinta</a><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#espacios">Espacios</a><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#eventos">Eventos</a><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#galeria">Galería</a><a class="text-primary font-semibold border-b border-secondary pb-0.5" href="#reservar">Reservar</a><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#opiniones">Opiniones</a><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#contacto">Contacto</a><a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#politicas">Políticas de Privacidad</a></div><div class="pt-6 border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-4 font-label-sm text-label-sm text-outline"><p class="">© 2024 Quinta Valhalla Eventos. Todos los derechos reservados.</p><p class="text-xs">Exclusividad garantizada · 1 evento por día</p></div></div></footer>
+<!-- SCRIPT INTERACTIVO SELECTOR & CONSTRUCTOR DE WHATSAPP -->
+<script>
+    (function() {
+      // Estado de la consulta
+      const state = {
+        tipo: 'Boda Soñada',
+        temporada: 'Primavera / Verano 2025',
+        invitados: '80 a 150 invitados',
+        momento: 'Tarde / Noche al Atardecer (17:00 a 05:00 hs)',
+        fecha: 'Sábado 15 de Noviembre'
+      };
+
+      const phone = '5491100000000';
+
+      function updateUI() {
+        const badgeTipo = document.getElementById('badge-tipo');
+        const badgeTemporada = document.getElementById('badge-temporada');
+        const badgeInvitados = document.getElementById('badge-invitados');
+        const badgeMomento = document.getElementById('badge-momento');
+        const badgeFecha = document.getElementById('badge-fecha');
+        const submitBtn = document.getElementById('btn-submit-wa');
+        const headerWaBtn = document.getElementById('btn-header-wa');
+
+        if (badgeTipo) badgeTipo.innerHTML = `Evento: <strong>${state.tipo}</strong>`;
+        if (badgeTemporada) badgeTemporada.innerHTML = `Temporada: <strong>${state.temporada}</strong>`;
+        if (badgeInvitados) badgeInvitados.innerHTML = `Invitados: <strong>${state.invitados}</strong>`;
+        if (badgeMomento) badgeMomento.innerHTML = `Momento: <strong>${state.momento.split('(')[0].trim()}</strong>`;
+        if (badgeFecha) badgeFecha.innerHTML = `Fecha: <strong>${state.fecha}</strong>`;
+
+        const textMessage = `Hola Quinta Valhalla! Deseo consultar la disponibilidad para mi evento:%0A` +
+          `• *Tipo de Evento:* ${encodeURIComponent(state.tipo)}%0A` +
+          `• *Temporada:* ${encodeURIComponent(state.temporada)}%0A` +
+          `• *Cantidad de Invitados:* ${encodeURIComponent(state.invitados)}%0A` +
+          `• *Momento:* ${encodeURIComponent(state.momento)}%0A` +
+          `• *Fecha Tentativa:* ${encodeURIComponent(state.fecha)}%0A%0A` +
+          `¿Podríamos coordinar una visita personalizada y conocer las condiciones de reserva? Muchas gracias!`;
+
+        const waUrl = `https://wa.me/${phone}?text=${textMessage}`;
+        if (submitBtn) submitBtn.href = waUrl;
+        if (headerWaBtn) headerWaBtn.href = waUrl;
+      }
+
+      function setupGroup(containerId, stateKey) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        const buttons = container.querySelectorAll('.btn-select');
+        buttons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            buttons.forEach(b => {
+              b.classList.remove('active', 'border-2', 'border-primary', 'bg-primary/5', 'text-primary');
+              b.classList.add('border', 'border-outline-variant', 'bg-surface', 'text-on-surface-variant');
+            });
+            btn.classList.remove('border', 'border-outline-variant', 'bg-surface', 'text-on-surface-variant');
+            btn.classList.add('active', 'border-2', 'border-primary', 'bg-primary/5', 'text-primary');
+            state[stateKey] = btn.getAttribute('data-value');
+            updateUI();
+          });
+        });
+      }
+
+      setupGroup('group-event-type', 'tipo');
+      setupGroup('group-season', 'temporada');
+      setupGroup('group-guests', 'invitados');
+      setupGroup('group-timing', 'momento');
+
+      // Calendario selector
+      const calButtons = document.querySelectorAll('.cal-day:not([disabled]):not(.cursor-not-allowed)');
+      const dateDisplay = document.getElementById('selected-date-display');
+
+      calButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          calButtons.forEach(b => {
+            b.classList.remove('active-cal', 'bg-primary', 'text-white', 'ring-2', 'ring-secondary', 'ring-offset-2');
+            b.classList.add('bg-emerald-50', 'text-emerald-700');
+          });
+          btn.classList.remove('bg-emerald-50', 'text-emerald-700');
+          btn.classList.add('active-cal', 'bg-primary', 'text-white', 'ring-2', 'ring-secondary', 'ring-offset-2');
+          
+          const chosenDay = btn.getAttribute('data-day') || 'Fecha acordada';
+          state.fecha = chosenDay;
+          if (dateDisplay) {
+            dateDisplay.innerHTML = `Fecha tentativa elegida: <strong class="text-primary font-bold">${chosenDay}</strong>`;
+          }
+          updateUI();
+        });
+      });
+
+      // Inicializar enlace de WhatsApp
+      updateUI();
+    })();
+  </script>
+
+
+
+
+
+
+
+
+</body></html>

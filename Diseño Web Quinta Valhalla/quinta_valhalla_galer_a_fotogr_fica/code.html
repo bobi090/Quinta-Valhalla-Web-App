@@ -1,0 +1,691 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Galería Fotográfica | Quinta Valhalla Eventos</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-lowest": "#ffffff",
+            "secondary": "#725b38",
+            "on-tertiary": "#ffffff",
+            "surface-bright": "#fbf9f6",
+            "primary-container": "#1b3b2b",
+            "on-primary": "#ffffff",
+            "background": "#fbf9f6",
+            "secondary-fixed-dim": "#e0c298",
+            "on-primary-container": "#83a590",
+            "outline-variant": "#c1c8c2",
+            "tertiary-container": "#283920",
+            "secondary-fixed": "#fedeb2",
+            "on-tertiary-container": "#8fa382",
+            "surface-container-low": "#f5f3f0",
+            "on-error": "#ffffff",
+            "surface": "#fbf9f6",
+            "on-secondary-fixed-variant": "#584323",
+            "surface-variant": "#e4e2df",
+            "error": "#ba1a1a",
+            "tertiary-fixed-dim": "#b8cda9",
+            "outline": "#727973",
+            "surface-container": "#efeeeb",
+            "tertiary-fixed": "#d4e9c4",
+            "surface-container-high": "#eae8e5",
+            "on-secondary-container": "#78603e",
+            "inverse-surface": "#30312f",
+            "on-primary-fixed-variant": "#2d4d3c",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed": "#281800",
+            "on-surface": "#1b1c1a",
+            "on-primary-fixed": "#002113",
+            "primary-fixed-dim": "#abcfb8",
+            "on-secondary": "#ffffff",
+            "inverse-on-surface": "#f2f0ed",
+            "on-tertiary-fixed-variant": "#3a4c31",
+            "surface-dim": "#dbdad7",
+            "inverse-primary": "#abcfb8",
+            "secondary-container": "#fedeb2",
+            "on-tertiary-fixed": "#0f1f09",
+            "on-background": "#1b1c1a",
+            "primary": "#032517",
+            "on-error-container": "#93000a",
+            "on-surface-variant": "#424843",
+            "surface-tint": "#456553",
+            "primary-fixed": "#c7ebd4",
+            "tertiary": "#13230c",
+            "surface-container-highest": "#e4e2df"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.375rem",
+            "space-sm": "0.75rem",
+            "margin": "3rem",
+            "space-lg": "2rem",
+            "margin-mobile": "1.25rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-md": "1.25rem",
+            "space-xl": "3.5rem"
+          },
+          "fontFamily": {
+            "title-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "display-xl-mobile": ["Playfair Display"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "display-xl": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "headline-lg-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "600" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "display-xl-mobile": ["38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "display-xl": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "500" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: rgba(197, 168, 128, 0.1);
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #725b38;
+      border-radius: 4px;
+    }
+  </style>
+<style id="custom-cursor" type="text/css">body button, body [type='button'], body input[type='reset'], body input[type='submit'], body [role="button"], ::-webkit-search-cancel-button, ::-webkit-search-decoration, ::-webkit-scrollbar-button, ::-webkit-file-upload-button, [role^=button], .cc_pointer, [type="search"]::-webkit-search-cancel-button, a, select, [type="search"]::-webkit-search-decoration, .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited, a > *, img,  ::-webkit-scrollbar-button, .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button, .ytp-volume-panel, #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon, body .custom-cursor-on-hover {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAACU0lEQVR4AYyTz2sTQRTHv7PZn2mxrTYJtbWiBw+K0oB6kYIKoicVb3pQ8CbePNqLF48VDPgHWPRgLkorihelUIWCBSl4UoQ2QYpNSGKabHZnd8c3u92YbSF02e++2Z35fua94a2C3ks8UlErvEa9sIpq4XjvVL9xEoKMCYg8BCbBgv39jL1zSUhli9EkgxDJ7/Sx3717sfQLlTwaaW/3Dsgo4FuAR1VJ7Y2BJKRKLpcg3MKgOzI2UVo4O7n2diQsr0+JSQgx4Kahcsu8oo4/vW0dnT+tZ5/c2Fh5NV1ansmvLx28WPoyDvFJ1itXh9oBoXI8A4Jb2nLLHntRr+aGxcCtfb557aQ6dP+8nn03pWbeXy9NHA7d248IIoqp7XeAm/BJJZuh3GFY/NvW39Rb2seGnVtqOKeK1eahSsel3boOKJfXvp+4W556cGf9x9UjPJcGTzMJkgpcA7/aDA1HxU+K35o+K9sKW2l6shW6FKXjsJlNB48PwJjLsuGbKW4aEhBLUFZSnmuCE5Q2Ebad7gLkQFlsOM8Wqu7vuT/24PTA8EPNt4ZiQDIaYangugA3PGmOpeBM/jO4dq9ip1rPNzqjwtUTmZCBzASgA0cokwDprRggY3Sw5459oAXzm22VO2HKZOKxTIKQqJwwM9d04fs1aY4VQRgLaMdZcKuFEEImOgt6jwByLDuYWwFtVkMqK9syZvR07KXMKi34Si3vUQRFEmUTlkBRZubpHXh6ERcYldRl9EBkNp4xS/9Ok7KiHXWSFslXA/ipAIFSIb38b49G/wAAAP//nuf3egAAAAZJREFUAwDrtPr/thodIQAAAABJRU5ErkJggg==") 5 0, pointer !important;} html,body,body select,body .custom-cursor-default-hover {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAACdklEQVR4AZyTTUhVQRTH/zP33pn35PU+fKaRFUn5VRkm4qtFvCxa1LJCihYtihKhfbTpQZtaBmGLaCNk9SLalCkt6plUigRBFNJCy4WV9j71fdw7c6dJcPM0MQ/DDMM558f/nDNDkbp1F9nbYSgQrNOoF8apCNmUqMz2RqBi5no4tEBc2wejqdtse9GS2tNdNXtvw/+CKJQqjjmztJ6GAle9bTe3u1ufNP4YqkM8bqwVRuEa+XlB8LAwTULgFdd9LdFWbHxd3159GNNvvWsBUUhPQUmuRvNZpKQLoijbYQZqo97N91sWKmINExNVGrRq0ykcTxGCI+MQ9GVmMO8qQBpGAHzjIV+4pw6sv3n86z6Mj1satuLS5bACBIPSoHfzC8gLBa5MmK4Jn7J8rdwXba/wP2h2tpyrHPjtX4lCITwl6HIgmVZj4lEqgxBhoNKAIw3pSir8lIcaGO8pGOZxxGK0HKQhzPmrBFqJEhZGMkVYimIqr3Lv007/8znnSiItz84IcrKG+QeBa+UMaAgvweGALgmSl7KOKQaTtqoymPxZovHP32p6P+0PvxyLBCenOkkaMeKizChsphvLNMSyIdmw7s2rRFLYYWoFtoFfqK3MBctyll2pTsxrFRrARyBwGsK6lCmavz6kFXZ7vVEL5lHE1aoPj2pADi4bBmgXDuxKwZ2c1mqG3swR23BpsJGz87UmgljFKBRLwJZn0NGUBCEKnZ0CrnEjXWLfv+QMtZMbHa6FE/p7kH9xKCLNz3Bwb2oRsBR1LDCppPV0NEmLCwKeagtH8BieJXf5uWzmiwGE6AnQOymBgb4ZXP7o4iK6SGHRt8L2BwAA//+uHDYYAAAABklEQVQDAH4k/SCYuu3FAAAAAElFTkSuQmCC") 0 0, auto !important;}</style></head>
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar (Web Header Shared Anchor) -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md dark:bg-surface-container-low/90 shadow-[0_8px_24px_-4px_rgba(27,59,43,0.05)] border-b border-outline-variant/30 dark:border-outline-variant/20 transition-all duration-300">
+<div class="flex justify-between items-center w-full px-6 lg:px-12 py-4 max-w-7xl mx-auto">
+<!-- Brand Logo / Identity -->
+<a class="flex items-center gap-3 transition-transform duration-300 hover:opacity-95" href="#">
+<img alt="Quinta Valhalla Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmxlLKBEF4GeII1JL8xexWBlpLtNOE1LqP4CopY79FdnO8Y-opRRsEYlhCiUouL1wCocQKH2HDRAOQhHC8YRyp-b7E6BJ66-485rYthKfRPvSxQgIuejUnw4mFOiDRzRyOLztnpLLDJAl6uHTdYYSoGW7BAB6o88qrUDy8O5M6ERzgybYWMDCLettB47Jq2wplxP4YA4fDdIIrmC4OzpeQx0Kp9W82_49XUQKDIK5RdrlkXwdjeQEdkexu4rK4UlKI">
+
+</a>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8 font-label-md text-label-md uppercase tracking-wider"><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors font-medium" href="#la-quinta">La Quinta</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors font-medium" href="#espacios">Espacios</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors font-medium" href="#eventos">Eventos</a><a class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold border-b-2 border-secondary pb-1" href="#galeria">Galería</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors font-medium" href="#reservar">Reservar</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors font-medium" href="#opiniones">Opiniones</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors font-medium" href="#contacto">Contacto</a></nav>
+<!-- Trailing Action: WhatsApp direct button -->
+
+<div class="hidden md:flex items-center"><a class="inline-flex items-center gap-2 bg-primary-container text-surface-container-lowest px-5 py-2.5 rounded-full font-label-md text-label-md tracking-wider hover:bg-primary transition-all duration-300 shadow-sm" href="https://wa.me/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-sm">chat</span><span class="">WhatsApp</span></a></div><div class="flex items-center gap-3 md:hidden"><a aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-primary-container text-surface-container-lowest flex items-center justify-center shadow-sm" href="https://wa.me/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-lg">chat</span></a><button aria-label="Abrir menú" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-surface-variant transition-colors" onclick="toggleMobileMenu()"><span class="material-symbols-outlined text-2xl">menu</span></button></div></div>
+</header><div class="fixed inset-0 z-50 hidden bg-primary/80 backdrop-blur-md flex justify-end opacity-0 transition-opacity duration-300" id="mobile-menu-drawer"><div class="bg-surface w-4/5 max-w-xs h-full p-6 flex flex-col justify-between shadow-2xl border-l border-outline-variant/30 transform translate-x-full transition-transform duration-300" id="mobile-drawer-content"><div class="flex flex-col gap-6"><div class="flex items-center justify-between pb-4 border-b border-outline-variant/20"><div class="flex items-center gap-2"><img alt="Quinta Valhalla Logo" class="h-8 w-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmxlLKBEF4GeII1JL8xexWBlpLtNOE1LqP4CopY79FdnO8Y-opRRsEYlhCiUouL1wCocQKH2HDRAOQhHC8YRyp-b7E6BJ66-485rYthKfRPvSxQgIuejUnw4mFOiDRzRyOLztnpLLDJAl6uHTdYYSoGW7BAB6o88qrUDy8O5M6ERzgybYWMDCLettB47Jq2wplxP4YA4fDdIIrmC4OzpeQx0Kp9W82_49XUQKDIK5RdrlkXwdjeQEdkexu4rK4UlKI"><span class="font-headline-sm text-lg font-semibold text-primary">Quinta Valhalla</span></div><button aria-label="Cerrar menú" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-secondary hover:text-white transition-colors" onclick="toggleMobileMenu()"><span class="material-symbols-outlined text-lg">close</span></button></div><nav class="flex flex-col gap-3 font-label-md text-label-md uppercase tracking-wider"><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors font-medium" href="#la-quinta" onclick="toggleMobileMenu()">1. La Quinta</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors font-medium" href="#espacios" onclick="toggleMobileMenu()">2. Espacios</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors font-medium" href="#eventos" onclick="toggleMobileMenu()">3. Eventos</a><a class="px-3 py-2 rounded-lg bg-primary-container text-surface-container-lowest font-semibold transition-colors flex items-center justify-between" href="#galeria" onclick="toggleMobileMenu()"><span class="">4. Galería</span><span class="material-symbols-outlined text-sm">arrow_forward</span></a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors font-medium" href="#reservar" onclick="toggleMobileMenu()">5. Reservar</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors font-medium" href="#opiniones" onclick="toggleMobileMenu()">6. Opiniones</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors font-medium" href="#contacto" onclick="toggleMobileMenu()">7. Contacto</a></nav></div><div class="pt-6 border-t border-outline-variant/20 flex flex-col gap-3"><a class="w-full inline-flex items-center justify-center gap-2 bg-primary-container text-surface-container-lowest py-3 rounded-full font-label-md text-label-md tracking-wider hover:bg-primary transition-all shadow-sm" href="https://wa.me/" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-lg">chat</span><span class="">Consultar por WhatsApp</span></a><p class="text-xs text-center text-outline">Botanical Splendor · Valhalla</p></div></div></div>
+<!-- Hero de Galería -->
+<section class="relative pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden bg-gradient-to-b from-surface-container-low via-surface to-background">
+<!-- Subtle Botanical Atmosphere Accents -->
+<div class="absolute top-12 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 pointer-events-none opacity-40 blur-3xl -z-10 bg-gradient-to-r from-secondary-fixed/40 via-tertiary-fixed/30 to-primary-fixed/20"></div>
+<div class="max-w-4xl mx-auto px-6 text-center">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-fixed/30 border border-secondary/20 mb-6">
+<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: &quot;FILL&quot; 1;">spa</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Atmósferas &amp; Celebraciones</span>
+</div>
+<h1 class="font-display-xl text-display-xl text-primary mb-6 tracking-tight">
+        Galería de Momentos &amp; Atmósferas
+      </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+        Cada rincón de Quinta Valhalla ha sido concebido para envolver las emociones más genuinas. Descubrí destellos de celebraciones donde la arquitectura campestre, los jardines añejos y la luz dorada dan vida a recuerdos imperecederos.
+      </p>
+<!-- Botanical Keyline Divider -->
+<div class="flex items-center justify-center gap-3 mt-10">
+<span class="h-[1px] w-12 bg-secondary/30"></span>
+<span class="material-symbols-outlined text-secondary text-sm">local_florist</span>
+<span class="h-[1px] w-12 bg-secondary/30"></span>
+</div>
+</div>
+</section>
+<!-- Barra de Filtros Interactiva -->
+<section class="sticky top-[73px] z-40 bg-surface/95 backdrop-blur-md border-y border-outline-variant/30 py-4 shadow-sm">
+<div class="max-w-7xl mx-auto px-6 overflow-x-auto custom-scrollbar">
+<div class="flex items-center justify-start lg:justify-center gap-2 md:gap-3 min-w-max pb-1" id="filter-container">
+<button class="filter-btn active-filter px-5 py-2 rounded-full font-label-md text-label-md transition-all duration-300 bg-primary-container text-surface-container-lowest shadow-sm" onclick="filterGallery('todos', this)">
+          Todos
+        </button>
+<button class="filter-btn px-5 py-2 rounded-full font-label-md text-label-md transition-all duration-300 bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-variant" onclick="filterGallery('bodas', this)">
+          Bodas al Aire Libre
+        </button>
+<button class="filter-btn px-5 py-2 rounded-full font-label-md text-label-md transition-all duration-300 bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-variant" onclick="filterGallery('fiestas15', this)">
+          Fiestas de 15
+        </button>
+<button class="filter-btn px-5 py-2 rounded-full font-label-md text-label-md transition-all duration-300 bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-variant" onclick="filterGallery('nocturnos', this)">
+          Eventos Nocturnos &amp; Fogones
+        </button>
+<button class="filter-btn px-5 py-2 rounded-full font-label-md text-label-md transition-all duration-300 bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-variant" onclick="filterGallery('detalles', this)">
+          Detalles &amp; Deco
+        </button>
+<button class="filter-btn px-5 py-2 rounded-full font-label-md text-label-md transition-all duration-300 bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-variant" onclick="filterGallery('interiores', this)">
+          Interiores &amp; Salón
+        </button>
+<button class="filter-btn px-5 py-2 rounded-full font-label-md text-label-md transition-all duration-300 bg-surface-container text-on-surface-variant hover:text-primary hover:bg-surface-variant" onclick="filterGallery('parque', this)">
+          Parque &amp; Atardeceres
+        </button>
+</div>
+</div>
+</section>
+<!-- Cuadrícula Editorial Masonry / Collage con Captions al Hover -->
+<main class="max-w-7xl mx-auto px-6 py-16">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid">
+<!-- Item 1: Bodas (Ceremonia en Gazebo) -->
+<article class="gallery-card group relative overflow-hidden rounded-2xl bg-surface-container border border-secondary/20 shadow-[0_8px_24px_-4px_rgba(27,59,43,0.05)] transition-all duration-500 hover:shadow-[0_20px_40px_-8px_rgba(27,59,43,0.12)] hover:-translate-y-1" data-category="bodas">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="An exquisite outdoor wedding ceremony at an architectural wrought-iron botanical gazebo adorned with lush white garden roses, eucalyptus leaves, and warm beige ribbons. Golden late afternoon sunlight filters through ancient leafy oak trees onto an ivory carpet aisle. The aesthetic highlights botanical luxury, deep forest green surroundings, and warm cream textures evoking high-end editorial serenity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-J5qfPZDeDKopU8vSyivV6_3COakiXieay8vj_zfeo-YcnpfAzasuoMmTlHr6jMFFBsJghtZD3cmbgR0NZG_XHGUPT-oXa9q_82RXUP_HunvcfPK1TtglJ6uJJX90n0rnA4w-tCCJSvZgg8ikp8Xr9zwZQcxoikm5jR9ZKd2kcNHeNJgBv5u-E_-U33lNVwOLuKLi169UIpltMne6AT_FVPEv7O7cKft5KkDOQZBf-lGAoHmT9f4">
+<!-- Gradient overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+<!-- Category Pill Top -->
+<div class="absolute top-4 left-4 z-10">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-label-sm tracking-wider uppercase bg-surface-bright/90 text-primary backdrop-blur-sm shadow-sm border border-secondary/20 font-semibold">
+              Bodas al Aire Libre
+            </span>
+</div>
+<!-- Lightbox Icon Action -->
+<button aria-label="Ampliar fotografía" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-surface/90 text-primary flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-secondary hover:text-white" onclick="openModal('Ceremonia en Gazebo', 'Bodas al Aire Libre', 'Un escenario romántico bajo la sombra de robles centenarios y orfebrería botánica.')">
+<span class="material-symbols-outlined text-lg">zoom_in</span>
+</button>
+<!-- Hover Caption Content -->
+<div class="absolute bottom-0 inset-x-0 p-6 z-10 text-surface-container-lowest">
+<span class="font-label-sm text-secondary-fixed uppercase tracking-widest block mb-1">Rincones Exclusivos</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-2">Ceremonia en Gazebo</h3>
+<p class="font-body-sm text-body-sm text-surface-container-lowest/80 line-clamp-2 transform translate-y-2 opacity-90 group-hover:translate-y-0 transition-transform duration-300">
+              Votos de amor bajo una pérgola de rosas y follaje silvestre iluminada por la caricia del sol poniente.
+            </p>
+</div>
+</div>
+</article>
+<!-- Item 2: Parque & Atardeceres (Brindis en Deck de Piscina) -->
+<article class="gallery-card group relative overflow-hidden rounded-2xl bg-surface-container border border-secondary/20 shadow-[0_8px_24px_-4px_rgba(27,59,43,0.05)] transition-all duration-500 hover:shadow-[0_20px_40px_-8px_rgba(27,59,43,0.12)] hover:-translate-y-1" data-category="parque">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="A sophisticated cocktail gathering by a crystal clear swimming pool bordered with warm natural stone decks and refined teak sun loungers. Well-dressed guests hold sparkling champagne flutes during golden hour dusk. Soft ambient gold lighting reflects across the water surface with emerald lawn expanses and tall pines framing the tranquil background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkfzkQgh2qObPJhx19_mBNH3x5dzAR6o-gPqfidts0CD9k8iinqv6R4tefvJPREHTViDNW3dmrrOX0cRhEOzo8uqVPy4aMCwntTK4lZaNiEFELoIjHpXKW8uYixPVnmpv3Rws9Wbc_1NCekbrno3_GzSR6u6LRafRQHJQulWWCTchTvGyjh-ExtS1fR4bEfAttYR4-4PzcZSBnrdKQ7-ps8h5z84y4dlx4KmuIQvN3TbZLuN2HaHw">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+<div class="absolute top-4 left-4 z-10">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-label-sm tracking-wider uppercase bg-surface-bright/90 text-primary backdrop-blur-sm shadow-sm border border-secondary/20 font-semibold">
+              Parque &amp; Atardeceres
+            </span>
+</div>
+<button aria-label="Ampliar fotografía" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-surface/90 text-primary flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-secondary hover:text-white" onclick="openModal('Brindis en Deck de Piscina', 'Parque &amp; Atardeceres', 'Atardeceres infinitos y copas en alto reflejándose en aguas cristalinas.')">
+<span class="material-symbols-outlined text-lg">zoom_in</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 p-6 z-10 text-surface-container-lowest">
+<span class="font-label-sm text-secondary-fixed uppercase tracking-widest block mb-1">Momentos Cocktails</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-2">Brindis en Deck de Piscina</h3>
+<p class="font-body-sm text-body-sm text-surface-container-lowest/80 line-clamp-2 transform translate-y-2 opacity-90 group-hover:translate-y-0 transition-transform duration-300">
+              El tintineo de copas bajo el ocaso estival mientras los reflejos del agua completan el marco escénico.
+            </p>
+</div>
+</div>
+</article>
+<!-- Item 3: Nocturnos (Iluminación de Guirnaldas en Arboleda) -->
+<article class="gallery-card group relative overflow-hidden rounded-2xl bg-surface-container border border-secondary/20 shadow-[0_8px_24px_-4px_rgba(27,59,43,0.05)] transition-all duration-500 hover:shadow-[0_20px_40px_-8px_rgba(27,59,43,0.12)] hover:-translate-y-1" data-category="nocturnos">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="An atmospheric night view of an estate forest garden canopy strung with thousands of warm golden fairy light canopies and Edison festoon garlands. Cozy outdoor lounge furniture sits near glowing iron fire pits, creating a mystical botanical celebration vibe with deep green tree silhouettes against twilight indigo skies." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFQ56OK9NWbohV8922ts-SztUVWHvklKhPkYk-paLIpg00qCUOufjMl3BktmN2fwQ6ZKrLkzzf0YXs2Dcv7Y-BEcMxSd4zSI1VlpwQqYFskjP-3CCb4M13bLntC1x2-uh6URKy-7sqAjdb6X5yooMDW9N9-j_XXQpB0QNNXP_LnncJ-wql-yCUwgCkvRR1LNBmBZu48QsH7ISv9zlVWdwr_v_dCm2lvYHOZ8U5hvKO0HndmMoW4LQ">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+<div class="absolute top-4 left-4 z-10">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-label-sm tracking-wider uppercase bg-surface-bright/90 text-primary backdrop-blur-sm shadow-sm border border-secondary/20 font-semibold">
+              Eventos Nocturnos &amp; Fogones
+            </span>
+</div>
+<button aria-label="Ampliar fotografía" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-surface/90 text-primary flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-secondary hover:text-white" onclick="openModal('Iluminación de Guirnaldas en Arboleda', 'Eventos Nocturnos &amp; Fogones', 'Un cielo estrellado artificial que abraza los jardines con calidez infinita.')">
+<span class="material-symbols-outlined text-lg">zoom_in</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 p-6 z-10 text-surface-container-lowest">
+<span class="font-label-sm text-secondary-fixed uppercase tracking-widest block mb-1">Noches Mágicas</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-2">Iluminación de Guirnaldas en Arboleda</h3>
+<p class="font-body-sm text-body-sm text-surface-container-lowest/80 line-clamp-2 transform translate-y-2 opacity-90 group-hover:translate-y-0 transition-transform duration-300">
+              Guirnaldas microled suspendidas entre las copas que transforman el parque en un cuento de hadas.
+            </p>
+</div>
+</div>
+</article>
+<!-- Item 4: Interiores (Banquete Salón Principal) -->
+<article class="gallery-card group relative overflow-hidden rounded-2xl bg-surface-container border border-secondary/20 shadow-[0_8px_24px_-4px_rgba(27,59,43,0.05)] transition-all duration-500 hover:shadow-[0_20px_40px_-8px_rgba(27,59,43,0.12)] hover:-translate-y-1" data-category="interiores">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="A grand interior banquet ballroom inside an estate manor featuring high exposed timber beam ceilings, magnificent crystal chandeliers, and long imperial tables dressed in heavy natural linen. Golden cutlery, delicate crystal glassware, and tall botanical floral centerpieces glow under gentle candlelight, framed by wide arched garden windows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPoi6XabkhehS1Ct65P0SJ95Mrm98z4Ha3_cpJcA7orHhUod7_hO9MMWyRGoNuNwgpjyaqDZ1ETEBS9ME4HI1izzRpN12havbtMjQT7xgylZu-BCwaaItnQp8gxDJshZw2fkXaXo_Abfm1ATkjS83_3UYodR2D2eP7KHSiw6xEd4JmL_wTARP3igTn4jQ1WqKDxecEJukw_llPkKa-JNlsQ1sOaF71UUD-hPpqfiKHH15eLkR_3tE">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+<div class="absolute top-4 left-4 z-10">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-label-sm tracking-wider uppercase bg-surface-bright/90 text-primary backdrop-blur-sm shadow-sm border border-secondary/20 font-semibold">
+              Interiores &amp; Salón
+            </span>
+</div>
+<button aria-label="Ampliar fotografía" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-surface/90 text-primary flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-secondary hover:text-white" onclick="openModal('Banquete Salón Principal', 'Interiores &amp; Salón', 'El equilibrio perfecto entre elegancia señorial y hospitalidad cálida.')">
+<span class="material-symbols-outlined text-lg">zoom_in</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 p-6 z-10 text-surface-container-lowest">
+<span class="font-label-sm text-secondary-fixed uppercase tracking-widest block mb-1">Arquitectura &amp; Confort</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-2">Banquete Salón Principal</h3>
+<p class="font-body-sm text-body-sm text-surface-container-lowest/80 line-clamp-2 transform translate-y-2 opacity-90 group-hover:translate-y-0 transition-transform duration-300">
+              Mesas imperiales con cubertería de latón, flores de estación y ventanales que integran el parque.
+            </p>
+</div>
+</div>
+</article>
+<!-- Item 5: Fiestas de 15 / Tradición (Asado & Quincho Rústico) -->
+<article class="gallery-card group relative overflow-hidden rounded-2xl bg-surface-container border border-secondary/20 shadow-[0_8px_24px_-4px_rgba(27,59,43,0.05)] transition-all duration-500 hover:shadow-[0_20px_40px_-8px_rgba(27,59,43,0.12)] hover:-translate-y-1" data-category="fiestas15">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="An authentic luxury Argentine asado grill station in a rustic chic open-air pavilion. Artisanal iron cruciform grills cook premium meats over fragrant hardwood embers. Natural timber tables, copper wine buckets, and warm terracotta floor tiles create a festive, welcoming culinary atmosphere surrounded by vineyard greens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhe4NEXtT-_FVvjJs17pN8yz97iVjPItY0WJRRgOqYFNIREyimf5GLTC56KJqkPHCLYsBKCuVlYTbMtCC71Bu-yls0omYDOMT4p28rMgjFdonldvJ4TvS7OJ5Js_D5a39AI59STTSRonUc7wdFbZ_gqeh6gLgv5DMDlHESyx-SM5jA6G0AOBsXeD4dzNOGilXIT0LtloolzbMfgIML8rlfXgvcjW0jB48SoSuYhAkdkMvezvzjC4A">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+<div class="absolute top-4 left-4 z-10">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-label-sm tracking-wider uppercase bg-surface-bright/90 text-primary backdrop-blur-sm shadow-sm border border-secondary/20 font-semibold">
+              Fiestas de 15
+            </span>
+</div>
+<button aria-label="Ampliar fotografía" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-surface/90 text-primary flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-secondary hover:text-white" onclick="openModal('Asado &amp; Quincho Rústico', 'Fiestas de 15', 'Nuestra impronta criolla elevada a una experiencia gourmet de alta gama.')">
+<span class="material-symbols-outlined text-lg">zoom_in</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 p-6 z-10 text-surface-container-lowest">
+<span class="font-label-sm text-secondary-fixed uppercase tracking-widest block mb-1">Gastronomía Autóctona</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-2">Asado &amp; Quincho Rústico</h3>
+<p class="font-body-sm text-body-sm text-surface-container-lowest/80 line-clamp-2 transform translate-y-2 opacity-90 group-hover:translate-y-0 transition-transform duration-300">
+              Fuegos vivos, brasas seleccionadas y la hospitalidad campera que emociona a todas las generaciones.
+            </p>
+</div>
+</div>
+</article>
+<!-- Item 6: Nocturnos / Fiestas (Pista de Baile bajo las estrellas) -->
+<article class="gallery-card group relative overflow-hidden rounded-2xl bg-surface-container border border-secondary/20 shadow-[0_8px_24px_-4px_rgba(27,59,43,0.05)] transition-all duration-500 hover:shadow-[0_20px_40px_-8px_rgba(27,59,43,0.12)] hover:-translate-y-1" data-category="nocturnos">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="An energetic open-air dance floor surrounded by verdant trees at midnight. Tasteful warm architectural uplighting in amber and deep green illuminates cheerful guests dancing beneath festoon bulb garlands and disco mirror ball sparkles reflecting on hardwood decking." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu-RseZ81YHT-U39TIPfKo8mDnFUTLY-I-aeZ5pTS1eWOrSnUqWqESjNHnmyA5EBpYTSOd1doVHpq56rlrwm9LCaFb_HN83mycF4iZHLZLrSxwNuTP8qn-Ow4lcM9XoRwZ_bTpYydzeHxCD2apIavc_ibpDHRIm9GmNvkybiiS4nqhgIdZV9nYT1eFDP_MVl8utqxNocsJA5_3Qq_M1B0pQZRZXuwggz7gBPVC7XdzTy1YA5QlwQ0">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+<div class="absolute top-4 left-4 z-10">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-label-sm tracking-wider uppercase bg-surface-bright/90 text-primary backdrop-blur-sm shadow-sm border border-secondary/20 font-semibold">
+              Eventos Nocturnos &amp; Fogones
+            </span>
+</div>
+<button aria-label="Ampliar fotografía" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-surface/90 text-primary flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-secondary hover:text-white" onclick="openModal('Pista de Baile bajo las estrellas', 'Eventos Nocturnos &amp; Fogones', 'La euforia compartida en un entorno natural único e irrepetible.')">
+<span class="material-symbols-outlined text-lg">zoom_in</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 p-6 z-10 text-surface-container-lowest">
+<span class="font-label-sm text-secondary-fixed uppercase tracking-widest block mb-1">Celebración Pura</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-2">Pista de Baile bajo las estrellas</h3>
+<p class="font-body-sm text-body-sm text-surface-container-lowest/80 line-clamp-2 transform translate-y-2 opacity-90 group-hover:translate-y-0 transition-transform duration-300">
+              Música, luces envolventes y la frescura del parque nocturno para bailar hasta el amanecer.
+            </p>
+</div>
+</div>
+</article>
+<!-- Item 7: Detalles & Deco -->
+<article class="gallery-card group relative overflow-hidden rounded-2xl bg-surface-container border border-secondary/20 shadow-[0_8px_24px_-4px_rgba(27,59,43,0.05)] transition-all duration-500 hover:shadow-[0_20px_40px_-8px_rgba(27,59,43,0.12)] hover:-translate-y-1" data-category="detalles">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="A macro detail shot of a bespoke wedding table setting. Handwritten artisanal calligraphy place cards on cotton textured paper rest on handmade ceramic plates with brushed gold silverware, olive sprigs, and small honey-scented beeswax taper candles in vintage brass holders." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrID_C1eCrEbOOGSKkWMP9sJZv9nTqfLbRMou5cHlBIdkYaKLu5Xn9HZGs6_B9lWcofbksw14zrHNkl_ymPHcD0nbIzv_KV8m4Br0lba43wpf383kiruXGe-CX_cypgYf3ZT7mXgEM3Q47pH52HtkWlm6hglCDsrWrOnzIBdGM_b4jfwFCbUUbFWQDecpiSis2jFdO8X7SxYtakP7K84r1S8xsjgGS86Ojp9hiAQ27AyuJXpu2yz0">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+<div class="absolute top-4 left-4 z-10">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-label-sm tracking-wider uppercase bg-surface-bright/90 text-primary backdrop-blur-sm shadow-sm border border-secondary/20 font-semibold">
+              Detalles &amp; Deco
+            </span>
+</div>
+<button aria-label="Ampliar fotografía" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-surface/90 text-primary flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-secondary hover:text-white" onclick="openModal('Papelería &amp; Vajilla Botánica', 'Detalles &amp; Deco', 'La belleza de lo sutil: diseño artesanal en cada elemento del servicio.')">
+<span class="material-symbols-outlined text-lg">zoom_in</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 p-6 z-10 text-surface-container-lowest">
+<span class="font-label-sm text-secondary-fixed uppercase tracking-widest block mb-1">Diseño Sensorial</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-2">Papelería &amp; Vajilla Botánica</h3>
+<p class="font-body-sm text-body-sm text-surface-container-lowest/80 line-clamp-2 transform translate-y-2 opacity-90 group-hover:translate-y-0 transition-transform duration-300">
+              Materiales nobles, texturas táctiles y toques de latón que acarician la vista de cada invitado.
+            </p>
+</div>
+</div>
+</article>
+<!-- Item 8: Parque & Atardeceres -->
+<article class="gallery-card group relative overflow-hidden rounded-2xl bg-surface-container border border-secondary/20 shadow-[0_8px_24px_-4px_rgba(27,59,43,0.05)] transition-all duration-500 hover:shadow-[0_20px_40px_-8px_rgba(27,59,43,0.12)] hover:-translate-y-1" data-category="parque">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="A wide panoramic golden hour vista across the sprawling estate grounds. A romantic curved gravel pathway weaves between ancient eucalyptus groves, wild hydrangeas, and sculpted lawn hillocks, with warm amber sunrays casting long dramatic silhouettes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5vyovkeXNG8C0ddA68vFUtF0nLqg1Arjz7bhqnZugcBWJaCGdKZBlKM7ePbmepYxCeGWe3zx_eg05169RCbE8pN7eJUSgu9Abel1nnIfxnGJMG5bWWYOdYAHV3GSu98FyIi-W7qMfgal3qm1Qnx-fn46qbI5XEh79IcKRWKb5eEZgDiOsrML8dScPhbyzxtSJE-8u0RBn91wqnaHqd1tS9kDQ_WCJnWOJelhXE3RdcMk0v2jo9eE">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+<div class="absolute top-4 left-4 z-10">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-label-sm tracking-wider uppercase bg-surface-bright/90 text-primary backdrop-blur-sm shadow-sm border border-secondary/20 font-semibold">
+              Parque &amp; Atardeceres
+            </span>
+</div>
+<button aria-label="Ampliar fotografía" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-surface/90 text-primary flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-secondary hover:text-white" onclick="openModal('Sendero de Eucaliptos', 'Parque &amp; Atardeceres', 'Naturaleza viva con senderos de contemplación y fotografías inolvidables.')">
+<span class="material-symbols-outlined text-lg">zoom_in</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 p-6 z-10 text-surface-container-lowest">
+<span class="font-label-sm text-secondary-fixed uppercase tracking-widest block mb-1">Paisajismo Añejo</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-2">Sendero de Eucaliptos</h3>
+<p class="font-body-sm text-body-sm text-surface-container-lowest/80 line-clamp-2 transform translate-y-2 opacity-90 group-hover:translate-y-0 transition-transform duration-300">
+              Más de dos hectáreas de flora autóctona para caminar y capturar la serenidad del predio.
+            </p>
+</div>
+</div>
+</article>
+<!-- Item 9: Bodas / Detalles -->
+<article class="gallery-card group relative overflow-hidden rounded-2xl bg-surface-container border border-secondary/20 shadow-[0_8px_24px_-4px_rgba(27,59,43,0.05)] transition-all duration-500 hover:shadow-[0_20px_40px_-8px_rgba(27,59,43,0.12)] hover:-translate-y-1" data-category="bodas">
+<div class="relative aspect-[4/5] overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" data-alt="A newlywed couple walking hand-in-hand under a monumental floral arch composed of wild pampas grass, white gardenias, and cascading ivy vines. Warm soft-focus natural sun rays backlight their joyous smiles in an ultra-luxurious organic garden estate setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm1KTzdOi4qPDdsIKS5aHmelrusd9ra2qJOETzrLuNi46Hive8hGMN27PycCaV2vWdrlaD3fBKP2b88sFt6nZLgcg5QFFESptrknCvYR85O_Fy8UrRuwFvxkYMcBKYXEDC6Q0_Q0jTlcUoJW4_9-spQZOqpgW2pSFQuZL8AR0X_F0OI8naRZ54cjUYsYJXIRmouOpRzFBoPsEqNCqH-JnAgilmePAkYese4gDeK3ph04Rmu3b_iFw">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+<div class="absolute top-4 left-4 z-10">
+<span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-label-sm tracking-wider uppercase bg-surface-bright/90 text-primary backdrop-blur-sm shadow-sm border border-secondary/20 font-semibold">
+              Bodas al Aire Libre
+            </span>
+</div>
+<button aria-label="Ampliar fotografía" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-surface/90 text-primary flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-secondary hover:text-white" onclick="openModal('Paso Nupcial en el Jardín', 'Bodas al Aire Libre', 'El inicio de un nuevo capítulo enmarcado por la grandiosidad botánica.')">
+<span class="material-symbols-outlined text-lg">zoom_in</span>
+</button>
+<div class="absolute bottom-0 inset-x-0 p-6 z-10 text-surface-container-lowest">
+<span class="font-label-sm text-secondary-fixed uppercase tracking-widest block mb-1">Emoción Pura</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold mb-2">Paso Nupcial en el Jardín</h3>
+<p class="font-body-sm text-body-sm text-surface-container-lowest/80 line-clamp-2 transform translate-y-2 opacity-90 group-hover:translate-y-0 transition-transform duration-300">
+              Rodeados por el aplauso de sus seres queridos y el perfume de flores recién abiertas.
+            </p>
+</div>
+</div>
+</article>
+</div>
+</main>
+<!-- Sección destacada: Historias Reales en Instagram -->
+<section class="py-20 bg-surface-container-low border-y border-outline-variant/30 relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed/40 text-secondary text-xs font-label-sm tracking-wider uppercase mb-3 font-semibold">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+            Comunidad Valhalla
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Historias Reales en Instagram</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl">
+            Vivencias compartidas por nuestros novios, anfitriones y agasajados. Etiquetanos en tus publicaciones usando <span class="font-semibold text-primary">@quintavalhalla</span>.
+          </p>
+</div>
+<a class="inline-flex items-center gap-2 border border-secondary text-primary hover:bg-secondary/10 px-6 py-3 rounded-full font-label-md text-label-md tracking-wider transition-all duration-300 self-start md:self-auto" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg">travel_explore</span>
+<span class="">Seguinos @quintavalhalla</span>
+</a>
+</div>
+<!-- Instagram Bento Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- IG Post 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-secondary/20 shadow-sm hover:shadow-md transition-shadow duration-300">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-primary font-semibold text-xs ring-1 ring-secondary/30">
+                S&amp;M
+              </div>
+<span class="font-label-sm text-label-sm text-primary font-bold">@sofi.y.mati</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-base">favorite</span>
+</div>
+<div class="relative aspect-square rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="An Instagram photograph of a radiant bride and groom sharing an emotional laugh during their golden hour toast under hanging garden wisteria vines. Warm analog film tone styling with natural skin tones and rich botanical green accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg7rjddIfc9__mr9OZaT0KilBIYHG9EE6hGDX6DYHlmewc12hCi-tZUUrsr64QbXnOori4NqIOnG2Ts7zspmkl8EcPzmtxmRd0YIILDa8D7GsmNIyCC2Z7b9rRJVpiNc7Ysra89asfkkFiR6Uc9W9RgE_fKXSitDT0CuCVH_5sxAN2hk9QBgsBMafru5sDh8efbhYXI-DwgQAqPRTltFHVaF3hi88k4fwFxhhK0MD4kgS1i8c2PoE">
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            "El mejor día de nuestras vidas en el paraíso de @quintavalhalla ✨ Gracias por tanta magia."
+          </p>
+<div class="mt-2 text-xs font-semibold text-secondary">
+            #BodaSofiyMati #QuintaValhalla #AmorVerdadero
+          </div>
+</div>
+<!-- IG Post 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-secondary/20 shadow-sm hover:shadow-md transition-shadow duration-300">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-primary font-semibold text-xs ring-1 ring-secondary/30">
+                CL
+              </div>
+<span class="font-label-sm text-label-sm text-primary font-bold">@camilalopez15</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-base">favorite</span>
+</div>
+<div class="relative aspect-square rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A portrait of a fifteen-year-old celebrant in an elegant emerald and gold gown posing by glowing twilight garden lanterns with sparklers in the evening air. Natural warm outdoor luxury setting with soft romantic lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDucIPymYbmP4yLMZAPsqBhRrd75cZIjd51jIeKsF-h4oplg9zekqxFLMnfT9jrFDHjXSwlNc2b_vxgCHsFRfzwLZ_m-5nBEEWiOU-xVHrVrIwkGdJS4rLBpd6uNAGgpTrTHjzGR8-RkRy0915gj0XITLSN1CcPKyz79SHTzRgqh6Ljy0c5uFlD1Vu7HzFgOmbR6FqVcPy740yK0KPx1v7WVHQK1tN9IWIVRfkpesm79tV4wVe9SCY">
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            "Mis 15 fueron un sueño hecho realidad! La pista bajo las estrellas fue lo más 🌙💫"
+          </p>
+<div class="mt-2 text-xs font-semibold text-secondary">
+            #Mis15Cami #ValhallaNights #FiestaSoñada
+          </div>
+</div>
+<!-- IG Post 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-secondary/20 shadow-sm hover:shadow-md transition-shadow duration-300">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-primary font-semibold text-xs ring-1 ring-secondary/30">
+                FP
+              </div>
+<span class="font-label-sm text-label-sm text-primary font-bold">@fer_palacios</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-base">favorite</span>
+</div>
+<div class="relative aspect-square rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A high-end corporate sunset networking cocktail around a roaring garden stone fireplace with rustic wooden trays serving artisanal tapas and vintage red wine glasses. Lush green surroundings with cozy golden ambience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSWhzIJIkre9T346JUBeOhwyyjtRbva8KDG8405YwTVlgeMAW4Tf793UgO1w-hbk9SlmIQSH1rAJY9pY5xCsn2v9rcjdWcBv_3r_ySXpvJICxDjiIPnVmE5bJ3gvTCQqAGaXMRmC72Zkw4Zs-LOtm5TL4d9okdpNf2oCH11_ezdE6okmG0M9SP_owsJsgTFZADv6EovIrDrNMFcUUQQYIzyxth1gNJHqUSd3sc5bTJ15jNLIoNO34">
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            "Cierre de año inmejorable con el equipo en @quintavalhalla. Gastronomía y calidez de diez."
+          </p>
+<div class="mt-2 text-xs font-semibold text-secondary">
+            #AfterOfficeValhalla #EventosCorporativos
+          </div>
+</div>
+<!-- IG Post 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-4 border border-secondary/20 shadow-sm hover:shadow-md transition-shadow duration-300">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary/10 flex items-center justify-center text-primary font-semibold text-xs ring-1 ring-secondary/30">
+                VG
+              </div>
+<span class="font-label-sm text-label-sm text-primary font-bold">@valengonzalez</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-base">favorite</span>
+</div>
+<div class="relative aspect-square rounded-xl overflow-hidden mb-3 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A candid moment of wedding guests laughing and raising artisanal champagne flutes on a sunny rustic lawn terrace decorated with white hydrangeas and olive wreaths. Clean, high-key organic lighting with warm cream textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSilL-YZfSKhHK_9PKtcOoVv4wII2g_VlkG8lfZwTJm0BRl0MpKd46CMIwMNJEBVFy_ESBDtliSdi7oOm6Fq4QpiQS-URR6Cvn3tTAnFvFTzU_yReC-_HLbYCER5w-qf41l4M7XDMHQh-ysOaE9y1O8wdRlJvn2A9oKcHjY0Vb6HYM4nso5QVx-rmYmAo9lsfS9fTvwKm_wSdccNqnPWnJvPemSoqUFgqvqPJfrdG-3GdZ_jALsH4">
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            "La ceremonia al aire libre más linda que vi en mi vida. Todo impecable @quintavalhalla 🌿"
+          </p>
+<div class="mt-2 text-xs font-semibold text-secondary">
+            #BodasDeVerano #QuintaValhallaEventos
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action Final Botánico -->
+<section class="py-24 bg-surface relative overflow-hidden">
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+<div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary-fixed/40 text-primary mb-8 ring-8 ring-secondary-fixed/20 shadow-sm">
+<span class="material-symbols-outlined text-3xl">mark_email_read</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6 max-w-2xl mx-auto">
+        ¿Te imaginás tu celebración retratada en estos rincones?
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl mx-auto leading-relaxed">
+        Hablemos por WhatsApp para dar el primer paso. Coordiná tu visita personalizada y sentí la serenidad de Quinta Valhalla en persona.
+      </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<!-- WhatsApp CTA -->
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-primary-container text-surface-container-lowest px-8 py-4 rounded-full font-label-md text-label-md tracking-wider transition-all duration-300 ease-in-out hover:bg-primary hover:shadow-[0_12px_28px_-4px_rgba(27,59,43,0.35)] active:scale-95" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl">chat</span>
+<span class="">Conversar por WhatsApp</span>
+</a>
+<!-- Instagram CTA -->
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-3 border border-secondary text-primary hover:bg-secondary/10 px-8 py-4 rounded-full font-label-md text-label-md tracking-wider transition-all duration-300 active:scale-95" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl">camera_alt</span>
+<span class="">Visitar nuestro Instagram</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer Minimalista Exacto a la Landing Page -->
+<footer class="w-full border-t border-outline-variant/30 dark:border-outline-variant/20 bg-surface-container dark:bg-surface-container-high transition-colors duration-200">
+<div class="flex flex-col max-w-7xl mx-auto px-6 lg:px-12 py-16 gap-8">
+<!-- Top Row: Logo, Links, Socials -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8 pb-8 border-b border-outline-variant/20">
+<!-- Logo Brand -->
+<div class="flex items-center gap-3">
+<img alt="Quinta Valhalla Logo" class="h-10 w-10 object-contain rounded-full ring-1 ring-secondary/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN2fmCf7u82Ufv8REgyTh6OphklACLoie7sdMMRy1nElQnqjsXohjome-plPOgzN3gI-BnHpRaka56McERFtHcD6pOnLL_MM-SiVOn0OYrDxn0CQyAHe_R7z08uJy1aUjijfQsKWqlwQHXH1BvmIBWx9rqTm9UmfsQchU7919BrFAkhHt-6pkGTbz8czr0VmiE4w5Zy_3iYRiuZB9voXaFB9w1OYpR0WkYBE0MG46p_vuvoNFVoC2NVHW-TVtdcQil">
+<span class="font-headline-sm text-headline-sm font-semibold text-primary dark:text-primary-fixed">Quinta Valhalla</span>
+</div>
+<!-- Quick Links -->
+<nav class="flex flex-wrap items-center gap-x-6 gap-y-2 font-body-sm text-body-sm"><a class="text-on-surface-variant hover:text-secondary dark:text-outline dark:hover:text-secondary-fixed transition-colors duration-200" href="#la-quinta">La Quinta</a><a class="text-on-surface-variant hover:text-secondary dark:text-outline dark:hover:text-secondary-fixed transition-colors duration-200" href="#espacios">Espacios</a><a class="text-on-surface-variant hover:text-secondary dark:text-outline dark:hover:text-secondary-fixed transition-colors duration-200" href="#eventos">Eventos</a><a class="text-primary dark:text-primary-fixed font-semibold border-b border-secondary pb-0.5" href="#galeria">Galería</a><a class="text-on-surface-variant hover:text-secondary dark:text-outline dark:hover:text-secondary-fixed transition-colors duration-200" href="#reservar">Reservar</a><a class="text-on-surface-variant hover:text-secondary dark:text-outline dark:hover:text-secondary-fixed transition-colors duration-200" href="#opiniones">Opiniones</a><a class="text-on-surface-variant hover:text-secondary dark:text-outline dark:hover:text-secondary-fixed transition-colors duration-200" href="#contacto">Contacto</a><a class="text-on-surface-variant hover:text-secondary dark:text-outline dark:hover:text-secondary-fixed transition-colors duration-200" href="#politicas">Políticas de Privacidad</a></nav>
+<!-- Social Icons: Only minimalist circular icons without text -->
+<div class="flex items-center gap-2">
+<!-- WhatsApp -->
+<a aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-surface border border-secondary/25 flex items-center justify-center text-primary hover:bg-secondary hover:text-white transition-colors duration-200" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<!-- Instagram -->
+<a aria-label="Instagram" class="w-9 h-9 rounded-full bg-surface border border-secondary/25 flex items-center justify-center text-primary hover:bg-secondary hover:text-white transition-colors duration-200" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</a>
+<!-- Facebook -->
+<a aria-label="Facebook" class="w-9 h-9 rounded-full bg-surface border border-secondary/25 flex items-center justify-center text-primary hover:bg-secondary hover:text-white transition-colors duration-200" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<!-- TikTok -->
+<a aria-label="TikTok" class="w-9 h-9 rounded-full bg-surface border border-secondary/25 flex items-center justify-center text-primary hover:bg-secondary hover:text-white transition-colors duration-200" href="https://tiktok.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">music_note</span>
+</a>
+<!-- YouTube -->
+<a aria-label="YouTube" class="w-9 h-9 rounded-full bg-surface border border-secondary/25 flex items-center justify-center text-primary hover:bg-secondary hover:text-white transition-colors duration-200" href="https://youtube.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">smart_display</span>
+</a>
+<!-- Pinterest -->
+<a aria-label="Pinterest" class="w-9 h-9 rounded-full bg-surface border border-secondary/25 flex items-center justify-center text-primary hover:bg-secondary hover:text-white transition-colors duration-200" href="https://pinterest.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">push_pin</span>
+</a>
+<!-- Email -->
+<a aria-label="Email" class="w-9 h-9 rounded-full bg-surface border border-secondary/25 flex items-center justify-center text-primary hover:bg-secondary hover:text-white transition-colors duration-200" href="mailto:info@quintavalhalla.com">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</a>
+</div>
+</div>
+<!-- Bottom Legal Row -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 font-label-sm text-label-sm text-outline">
+<p class="">© 2024 Quinta Valhalla Eventos. Todos los derechos reservados.</p>
+<p class="text-xs">Botanical Splendor · Elegancia y Naturaleza</p>
+</div>
+</div>
+</footer>
+<!-- Lightbox Modal para Fotografías -->
+<div class="fixed inset-0 z-50 hidden bg-primary/80 backdrop-blur-md flex items-center justify-center p-4 opacity-0 transition-opacity duration-300" id="gallery-modal">
+<div class="bg-surface rounded-2xl max-w-2xl w-full p-6 relative border border-secondary/30 shadow-2xl transform scale-95 transition-transform duration-300" id="modal-container">
+<button aria-label="Cerrar ventana" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-secondary hover:text-white transition-colors" onclick="closeModal()">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+<div class="mb-4">
+<span class="inline-block px-3 py-1 rounded-full text-xs font-label-sm uppercase bg-secondary-fixed/40 text-secondary font-semibold mb-2" id="modal-tag"></span>
+<h3 class="font-headline-md text-headline-md text-primary font-semibold" id="modal-title"></h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed" id="modal-desc"></p>
+<div class="flex justify-end">
+<a class="inline-flex items-center gap-2 bg-primary-container text-surface-container-lowest px-5 py-2.5 rounded-full font-label-md text-label-md tracking-wider hover:bg-primary transition-all" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span class="">Consultar por esta ambientación</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Botón Flotante de WhatsApp Limpio en Esquina Inferior Derecha (Sin Etiqueta) -->
+<a aria-label="WhatsApp" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-[#1b3b2b] text-[#faf8f5] shadow-[0_10px_25px_-5px_rgba(27,59,43,0.4)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all duration-300 ring-4 ring-secondary/20" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: &quot;FILL&quot; 1;">chat</span>
+</a>
+<!-- Gallery Filter & Lightbox Vanilla JS Micro-interactions -->
+<script>
+    function filterGallery(category, buttonElement) {
+      // Update button styles
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-surface-container-lowest', 'shadow-sm');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+
+      buttonElement.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      buttonElement.classList.add('bg-primary-container', 'text-surface-container-lowest', 'shadow-sm');
+
+      // Filter gallery cards
+      const cards = document.querySelectorAll('.gallery-card');
+      cards.forEach(card => {
+        if (category === 'todos' || card.getAttribute('data-category') === category) {
+          card.style.display = 'block';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 50);
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(10px)';
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 300);
+        }
+      });
+    }
+
+    function openModal(title, tag, desc) {
+      const modal = document.getElementById('gallery-modal');
+      const container = document.getElementById('modal-container');
+      document.getElementById('modal-title').innerText = title;
+      document.getElementById('modal-tag').innerText = tag;
+      document.getElementById('modal-desc').innerText = desc;
+
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        container.classList.remove('scale-95');
+        container.classList.add('scale-100');
+      }, 10);
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('gallery-modal');
+      const container = document.getElementById('modal-container');
+      modal.classList.add('opacity-0');
+      container.classList.remove('scale-100');
+      container.classList.add('scale-95');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+    }
+
+    // Close on outside click
+    document.getElementById('gallery-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+  </script>
+
+
+
+
+
+
+<script>function toggleMobileMenu(){const drawer=document.getElementById('mobile-menu-drawer');const content=document.getElementById('mobile-drawer-content');if(drawer.classList.contains('hidden')){drawer.classList.remove('hidden');setTimeout(()=>{drawer.classList.remove('opacity-0');content.classList.remove('translate-x-full');content.classList.add('translate-x-0');},10);}else{drawer.classList.add('opacity-0');content.classList.remove('translate-x-0');content.classList.add('translate-x-full');setTimeout(()=>{drawer.classList.add('hidden');},300);}}document.addEventListener('DOMContentLoaded',function(){const drawer=document.getElementById('mobile-menu-drawer');if(drawer){drawer.addEventListener('click',function(e){if(e.target===this){toggleMobileMenu();}});}});</script>
+
+</body></html>
