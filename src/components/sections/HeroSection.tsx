@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Fade, Slide } from 'react-awesome-reveal';
 import { animated, useSpring } from '@react-spring/web';
 import DepthText from '../ui/DepthText';
 import { HeroParticles } from '../animations/HeroParticles';
 import GlassSurface from '../ui/GlassSurface';
 import { TreePine, ChevronDown } from 'lucide-react';
 import { ImageWithSkeleton } from '../ui/ImageWithSkeleton';
+import { FadeIn, Slide } from '../animations/FadeIn';
 
 export const HeroSection: React.FC = () => {
   const [buttonSpring, api] = useSpring(() => ({
@@ -42,8 +42,8 @@ export const HeroSection: React.FC = () => {
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
         {/* Main Headline */}
         <div className="flex flex-col items-center gap-2 max-w-4xl">
-          <Slide direction="up" triggerOnce duration={1000} cascade damping={0.2}>
-            <Fade triggerOnce duration={1200} delay={200}>
+          <Slide triggerOnce direction="up" duration={1} cascade damping={0.2}>
+            <FadeIn triggerOnce duration={1.2} delay={0.2}>
               <DepthText
                 text="Quinta Valhalla"
                 layers={12}
@@ -54,17 +54,17 @@ export const HeroSection: React.FC = () => {
                 className="font-serif px-8 py-6"
                 shadow
               />
-            </Fade>
-            <Fade triggerOnce duration={1500} delay={400}>
+            </FadeIn>
+            <FadeIn triggerOnce duration={1.5} delay={0.4}>
               <span className="font-serif text-xl sm:text-2xl md:text-3xl text-brand-cream font-normal italic tracking-tight drop-shadow-md">
                 Tu evento, en un entorno distinto
               </span>
-            </Fade>
+            </FadeIn>
           </Slide>
         </div>
 
         {/* CTA Button */}
-        <Fade triggerOnce delay={900} duration={1200} direction="up">
+        <FadeIn triggerOnce delay={0.9} duration={1.2} direction="up">
           <div className="mt-8 flex items-center justify-center w-full">
             <animated.div
               style={buttonSpring}
@@ -90,11 +90,11 @@ export const HeroSection: React.FC = () => {
               </Link>
             </animated.div>
           </div>
-        </Fade>
+        </FadeIn>
       </div>
 
       {/* Scroll Down Indicator */}
-      <Fade triggerOnce delay={1500} duration={1000}>
+      <FadeIn triggerOnce delay={1.5} duration={1}>
         <div className="absolute bottom-6 inset-x-0 flex justify-center z-10 pointer-events-none">
           <a
             href="#conoce-quinta"
@@ -107,7 +107,7 @@ export const HeroSection: React.FC = () => {
             <span className="animate-bounce"><ChevronDown size={24} /></span>
           </a>
         </div>
-      </Fade>
+      </FadeIn>
     </section>
   );
 };

@@ -131,7 +131,7 @@ const AccordionGallery = ({
           if (isActive) {
             tl.to([bar, text], { opacity: 1, x: 0, duration: dur, ease, stagger: prefersReduced ? 0 : stagger }, 0);
           } else {
-            tl.to([bar, text], { opacity: 0, x: -14, duration: dur * 0.6, ease }, 0);
+            tl.to([bar, text], { opacity: 1, x: 0, duration: dur * 0.6, ease }, 0);
           }
         }
       });
@@ -269,7 +269,7 @@ const AccordionGallery = ({
             </span>
             {showLabels && (
               <span
-                className="pointer-events-none absolute bottom-5 left-5 right-5 z-[2] flex items-center gap-3"
+                className={`pointer-events-none absolute z-[2] flex items-center gap-3 transition-all duration-300 ${isActive ? "bottom-5 left-5 right-5 flex-row" : "bottom-5 left-1/2 -translate-x-1/2 flex-col"}`}
                 aria-hidden="true"
               >
                 <span
@@ -286,7 +286,7 @@ const AccordionGallery = ({
                   ref={(el: HTMLElement | null) => {
                     textRefs.current[i] = el;
                   }}
-                  className="overflow-hidden text-ellipsis whitespace-nowrap text-[clamp(1rem,1.4vw,1.4rem)] font-semibold tracking-[0.01em] opacity-0 [text-shadow:0_2px_14px_rgba(0,0,0,0.55)]"
+                  className={`overflow-hidden text-ellipsis whitespace-nowrap font-semibold tracking-[0.01em] [text-shadow:0_2px_14px_rgba(0,0,0,0.55)] transition-all duration-300 ${isActive ? "text-[clamp(1rem,1.4vw,1.4rem)] opacity-100" : "text-[clamp(0.8rem,1vw,1rem)] opacity-75 [writing-mode:vertical-rl] rotate-180 md:rotate-0"}`}
                   style={{ color: textColor }}
                 >
                   {item.label}
@@ -301,3 +301,6 @@ const AccordionGallery = ({
 };
 
 export default AccordionGallery;
+
+
+

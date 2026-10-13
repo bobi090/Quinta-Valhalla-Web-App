@@ -3,24 +3,24 @@ import { Link } from 'react-router-dom';
 import { SectionHeading } from '../ui/SectionHeading';
 import { ImageWithSkeleton } from '../ui/ImageWithSkeleton';
 import { SPACES_DATA } from '../../data/spaces';
-import { Fade } from 'react-awesome-reveal';
+import { FadeIn } from '../animations/FadeIn';
 import { ArrowRight } from 'lucide-react';
 
 export const SpacesOverview: React.FC = () => {
   return (
     <section className="py-24 bg-surface relative overflow-hidden" id="conoce-quinta">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <Fade triggerOnce direction="up" duration={800}>
+        <FadeIn triggerOnce direction="up" duration={0.8}>
           <SectionHeading
             badge="Conocé el espacio"
             badgeIcon="nature_people"
             title="El espacio"
             subtitle="Quinta Valhalla es una quinta para eventos ubicada en 20 de Junio, Zona Oeste, que combina espacios verdes, pileta y áreas al aire libre con un salón cubierto."
           />
-        </Fade>
+        </FadeIn>
 
         {/* Metric Highlight Bar */}
-        <Fade triggerOnce direction="up" delay={200} duration={800}>
+        <FadeIn triggerOnce direction="up" delay={0.2} duration={0.8}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20 p-6 rounded-2xl bg-surface-container-low border border-secondary/25 text-center max-w-4xl mx-auto shadow-xs">
             <div className="p-3 border-r border-outline-variant/30 last:border-r-0">
               <p className="font-serif text-2xl md:text-3xl text-primary font-semibold">Salón</p>
@@ -47,11 +47,11 @@ export const SpacesOverview: React.FC = () => {
               </p>
             </div>
           </div>
-        </Fade>
+        </FadeIn>
 
         {/* Bento Grid Showcase of Top 3 Spaces */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <Fade triggerOnce cascade damping={0.2} direction="up" duration={1000} className="contents">
+          <FadeIn triggerOnce cascade damping={0.2} direction="up" duration={1} className="contents">
             {SPACES_DATA.slice(0, 3).map((space) => (
               <article
                 key={space.id}
@@ -94,11 +94,11 @@ export const SpacesOverview: React.FC = () => {
                 </div>
               </article>
             ))}
-          </Fade>
+          </FadeIn>
         </div>
 
         {/* View All Spaces CTA */}
-        <Fade triggerOnce delay={300} direction="up" className="mt-14 text-center">
+        <FadeIn triggerOnce delay={0.3} direction="up" className="mt-14 text-center">
           <Link
             to="/espacios"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-surface font-sans text-sm font-semibold hover:bg-secondary hover:text-white transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1"
@@ -106,8 +106,9 @@ export const SpacesOverview: React.FC = () => {
             <span>Explorar todos los espacios</span>
             <ArrowRight size={16} strokeWidth={2.5} />
           </Link>
-        </Fade>
+        </FadeIn>
       </div>
     </section>
   );
 };
+

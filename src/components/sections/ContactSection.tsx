@@ -3,7 +3,7 @@ import { createConsultaWhatsAppUrl } from '../../services/whatsapp';
 import Aurora from '../animations/Aurora';
 import { AnimatedDivider } from '../ui/AnimatedDivider';
 import { Select } from '../ui/Select';
-import { Fade } from 'react-awesome-reveal';
+import { FadeIn } from '../animations/FadeIn';
 
 export const ContactSection: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -40,7 +40,7 @@ export const ContactSection: React.FC = () => {
       {/* Dark overlay so text stays readable */}
       <div className="absolute inset-0 z-0 bg-primary/60 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        <Fade triggerOnce direction="up" duration={800}>
+        <FadeIn triggerOnce direction="up" duration={0.8}>
           <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white font-medium tracking-tight leading-tight">
               Consultá por tu evento
@@ -50,7 +50,7 @@ export const ContactSection: React.FC = () => {
               Completá el formulario para que podamos asesorarte y confirmar disponibilidad.
             </p>
           </div>
-        </Fade>
+        </FadeIn>
 
         <div className="max-w-2xl mx-auto p-8 sm:p-10 md:p-12 rounded-3xl bg-surface-container-lowest border border-secondary/25 shadow-sm">
 
@@ -178,3 +178,4 @@ export const ContactSection: React.FC = () => {
     </section>
   );
 };
+

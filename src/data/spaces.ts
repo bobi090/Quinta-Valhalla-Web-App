@@ -114,7 +114,7 @@ export const SPACES_DATA: Space[] = [
     description: 'Piscina con deck para darle otro estilo a los eventos de temporada. Ideal como espacio de recepción y para momentos más relajados al aire libre.',
     banquetCapacity: 0,
     cocktailCapacity: 0,
-    mainImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAZ1FZ5JnzvcL7UOWDH3auBwpJGwEWserYkF3VEv4xYqchERhgdnODdP1Nn-oVGZQ0WiW7cbH6sHNoBDEB_UK8orHfhguVtU8nJ3yLZpkOhij6pc_9FsxLLoulQb4HDjTiS8qVOgiO_TjaHH0yOqSmIO6DXJbx0govuMFXPY0o99I0eBRiB7Blou2SGYpAN8CVTmxW6cIOrCsLGsrhI4W7Kd17Ws4E3S_It6Jw3z5Rl5mn4Ri5tMY',
+    mainImage: 'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=1200&auto=format&fit=crop',
     mainImageAlt: 'Piscina con deck en Quinta Valhalla.',
     features: [
       'Piscina con agua cristalina.',
@@ -212,3 +212,4 @@ export const SPACES_DATA: Space[] = [
     ]
   }
 ];
+

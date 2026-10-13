@@ -24,7 +24,7 @@ export const ImageWithSkeleton: React.FC<ImageWithSkeletonProps> = ({
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className={cn('relative overflow-hidden', aspectClassName)}>
+    <div className={cn('relative overflow-hidden w-full h-full', aspectClassName)}>
       {/* Skeleton placeholder — visible until image loads */}
       {!loaded && (
         <Skeleton
@@ -52,3 +52,4 @@ export const ImageWithSkeleton: React.FC<ImageWithSkeletonProps> = ({
     </div>
   );
 };
+

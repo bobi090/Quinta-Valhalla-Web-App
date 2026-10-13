@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { SectionHeading } from '../ui/SectionHeading';
 import { createVisitWhatsAppUrl } from '../../services/whatsapp';
-import { Fade } from 'react-awesome-reveal';
+import { FadeIn } from '../animations/FadeIn';
 import { MessageCircle, TreePine, BadgeCheck, PartyPopper, CalendarPlus } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
@@ -41,18 +41,18 @@ export const BookingSteps: React.FC = () => {
   return (
     <section className="py-24 bg-surface-container-low border-t border-outline-variant/30 relative" id="como-reservar">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <Fade triggerOnce direction="up" duration={800}>
+        <FadeIn triggerOnce direction="up" duration={0.8}>
           <SectionHeading
             badge="¿Cómo es el proceso?"
             badgeIcon="timeline"
             title="Consultá, visitá, reservá y celebrá"
             subtitle="Un proceso simple y directo para organizar tu evento en Quinta Valhalla."
           />
-        </Fade>
+        </FadeIn>
 
         {/* 4-Step Horizontal / Grid Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
-          <Fade triggerOnce cascade damping={0.2} direction="up" duration={800} className="contents">
+          <FadeIn triggerOnce cascade damping={0.2} direction="up" duration={0.8} className="contents">
             {steps.map((item) => (
               <div
                 key={item.step}
@@ -78,11 +78,11 @@ export const BookingSteps: React.FC = () => {
                 </div>
               </div>
             ))}
-          </Fade>
+          </FadeIn>
         </div>
 
         {/* Action ribbon */}
-        <Fade triggerOnce direction="up" delay={400} duration={800}>
+        <FadeIn triggerOnce direction="up" delay={0.4} duration={0.8}>
           <div className="mt-14 p-8 rounded-3xl bg-primary text-surface-bright flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
             <div className="space-y-1 text-center md:text-left">
               <h4 className="font-serif text-2xl font-medium text-surface-bright">
@@ -111,8 +111,9 @@ export const BookingSteps: React.FC = () => {
               </Link>
             </div>
           </div>
-        </Fade>
+        </FadeIn>
       </div>
     </section>
   );
 };
+

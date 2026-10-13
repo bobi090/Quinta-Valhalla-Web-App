@@ -5,7 +5,7 @@ import { Lightbox } from '../ui/Lightbox';
 import { ImageWithSkeleton } from '../ui/ImageWithSkeleton';
 import { GALLERY_DATA } from '../../data/gallery';
 import { GalleryItem } from '../../types';
-import { Fade, Zoom } from 'react-awesome-reveal';
+import { FadeIn } from '../animations/FadeIn';
 import { ZoomIn, ArrowRight } from 'lucide-react';
 
 export const GalleryPreview: React.FC = () => {
@@ -34,18 +34,18 @@ export const GalleryPreview: React.FC = () => {
   return (
     <section className="py-24 bg-surface relative" id="galeria-preview">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <Fade triggerOnce direction="up" duration={800}>
+        <FadeIn triggerOnce direction="up" duration={0.8}>
           <SectionHeading
             badge="Atmósferas & Celebraciones"
             badgeIcon="photo_library"
             title="Galería de Momentos"
             subtitle="Cada rincón de Quinta Valhalla ha sido concebido para envolver las emociones más genuinas. Descubrí destellos de celebraciones donde la naturaleza, los árboles añejos y la luz dorada dan vida a recuerdos imperecederos."
           />
-        </Fade>
+        </FadeIn>
 
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Zoom triggerOnce cascade damping={0.1} duration={800} className="contents">
+          <FadeIn triggerOnce cascade damping={0.1} duration={0.8} type="zoom" className="contents">
             {previewItems.map((item, idx) => (
               <article
                 key={item.id}
@@ -89,11 +89,11 @@ export const GalleryPreview: React.FC = () => {
                 </div>
               </article>
             ))}
-          </Zoom>
+          </FadeIn>
         </div>
 
         {/* Explore Full Gallery Button */}
-        <Fade triggerOnce delay={300} direction="up" className="mt-14 text-center">
+        <FadeIn triggerOnce delay={0.3} direction="up" className="mt-14 text-center">
           <Link
             to="/galeria"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary-container text-surface-bright font-sans text-sm font-semibold hover:bg-primary transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-1"
@@ -101,7 +101,7 @@ export const GalleryPreview: React.FC = () => {
             <span>Ver galería completa con filtros temáticos</span>
             <ArrowRight size={16} strokeWidth={2.5} className="transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
-        </Fade>
+        </FadeIn>
       </div>
 
       {/* Lightbox Modal */}
@@ -115,3 +115,4 @@ export const GalleryPreview: React.FC = () => {
     </section>
   );
 };
+

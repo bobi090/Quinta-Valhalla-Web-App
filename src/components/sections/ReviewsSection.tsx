@@ -1,25 +1,25 @@
 import React from 'react';
 import { SectionHeading } from '../ui/SectionHeading';
 import { REVIEWS_METRICS } from '../../data/reviews';
-import { Fade, Zoom } from 'react-awesome-reveal';
+import { FadeIn } from '../animations/FadeIn';
 import { Star, ExternalLink } from 'lucide-react';
 
 export const ReviewsSection: React.FC = () => {
   return (
     <section className="py-24 bg-surface relative" id="experiencias-preview">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <Fade triggerOnce direction="up" duration={800}>
+        <FadeIn triggerOnce direction="up" duration={0.8}>
           <SectionHeading
             badge="Lo que dicen nuestros clientes"
             badgeIcon="rate_review"
             title="Opiniones Reales"
             subtitle="Conocé las experiencias de quienes eligieron Quinta Valhalla para celebrar."
           />
-        </Fade>
+        </FadeIn>
 
         {/* Google Reviews Card */}
         <div className="max-w-2xl mx-auto">
-          <Zoom triggerOnce duration={800} delay={200}>
+          <FadeIn triggerOnce duration={0.8} delay={0.2} type="zoom">
             <div className="p-8 md:p-10 rounded-3xl bg-surface-container-lowest shadow-xs border border-secondary/25 text-center transition-all duration-300 hover:shadow-lg">
               {/* Google Reviews Badge */}
               <div className="flex items-center justify-center gap-4 mb-6">
@@ -60,9 +60,10 @@ export const ReviewsSection: React.FC = () => {
                 <span>Ver reseñas en Google</span>
               </a>
             </div>
-          </Zoom>
+          </FadeIn>
         </div>
       </div>
     </section>
   );
 };
+

@@ -9,9 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "@gsap/react": "^2.1.2",
     "@react-spring/web": "^10.1.2",
     "@tsparticles/react": "^4.4.0",
     "@tsparticles/slim": "^4.4.0",
@@ -22,7 +19,6 @@
     "lucide-react": "^1.16.0",
     "ogl": "^1.0.11",
     "react": "^18.3.1",
-    "react-awesome-reveal": "^4.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
     "tailwind-merge": "^3.7.0"

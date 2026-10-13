@@ -4,25 +4,25 @@ import { SectionHeading } from '../ui/SectionHeading';
 import { ImageWithSkeleton } from '../ui/ImageWithSkeleton';
 import { EVENTS_DATA } from '../../data/events';
 import { createEventWhatsAppUrl } from '../../services/whatsapp';
-import { Fade } from 'react-awesome-reveal';
+import { FadeIn } from '../animations/FadeIn';
 import { TreePine, Palette, Headset, MessageCircle, ArrowRight } from 'lucide-react';
 
 export const EventsOverview: React.FC = () => {
   return (
     <section className="py-24 bg-surface-container-low relative border-y border-outline-variant/30" id="eventos-preview">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <Fade triggerOnce direction="up" duration={800}>
+        <FadeIn triggerOnce direction="up" duration={0.8}>
           <SectionHeading
             badge="Elegí cómo querés celebrar"
             badgeIcon="celebration"
             title="Tipos de Eventos"
             subtitle="Cumpleaños, 15 años, casamientos, reuniones familiares y fiestas de egresados. Un espacio versátil para distintas celebraciones."
           />
-        </Fade>
+        </FadeIn>
 
         {/* 3 Core Value Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16 max-w-4xl mx-auto">
-          <Fade triggerOnce cascade damping={0.2} direction="up" duration={800}>
+          <FadeIn triggerOnce cascade damping={0.2} direction="up" duration={0.8}>
             <div className="p-5 rounded-2xl bg-surface-container-lowest border border-secondary/25 flex items-start gap-3.5 shadow-2xs transition-transform duration-300 hover:-translate-y-1 hover:shadow-md">
               <TreePine size={22} strokeWidth={2} className="text-secondary mt-0.5 shrink-0" />
               <div>
@@ -52,12 +52,12 @@ export const EventsOverview: React.FC = () => {
                 </p>
               </div>
             </div>
-          </Fade>
+          </FadeIn>
         </div>
 
         {/* Featured Events Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Fade triggerOnce cascade damping={0.3} direction="up" duration={1000} className="contents">
+          <FadeIn triggerOnce cascade damping={0.3} direction="up" duration={1} className="contents">
             {EVENTS_DATA.slice(0, 2).map((event) => (
               <div
                 key={event.id}
@@ -111,9 +111,10 @@ export const EventsOverview: React.FC = () => {
                 </div>
               </div>
             ))}
-          </Fade>
+          </FadeIn>
         </div>
       </div>
     </section>
   );
 };
+

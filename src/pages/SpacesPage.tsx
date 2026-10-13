@@ -5,7 +5,7 @@ import AccordionGallery from '../components/ui/AccordionGallery';
 import InfiniteSpiral from '../components/ui/InfiniteSpiral';
 import Grainient from '../components/ui/Grainient';
 import StrokeText from '../components/ui/StrokeText';
-import { Fade } from 'react-awesome-reveal';
+import { FadeIn } from '../components/animations/FadeIn';
 import { MessageCircle } from 'lucide-react';
 
 export const SpacesPage: React.FC = () => {
@@ -80,8 +80,8 @@ export const SpacesPage: React.FC = () => {
           <div className="w-full flex flex-col items-start gap-1 sm:gap-2">
             <StrokeText
               text="NUESTROS"
-              strokeColor="#124b13ff"
-              fillColor="#27e470ff"
+              strokeColor="#297234ff"
+              fillColor="#ffffff"
               strokeWidth={1.8}
               drawDuration={1.8}
               fillDelay={0.3}
@@ -96,8 +96,8 @@ export const SpacesPage: React.FC = () => {
             />
             <StrokeText
               text="ESPACIOS"
-              strokeColor="#124b13ff"
-              fillColor="#27e470ff"
+              strokeColor="#297234ff"
+              fillColor="#ffffff"
               strokeWidth={1.8}
               drawDuration={1.8}
               fillDelay={0.5}
@@ -117,7 +117,7 @@ export const SpacesPage: React.FC = () => {
 
       {/* AccordionGallery — interactive spaces showcase */}
       <section className="py-16 md:py-24 px-6 md:px-12 max-w-7xl mx-auto">
-        <Fade triggerOnce duration={800}>
+        <FadeIn triggerOnce duration={0.8}>
           <AccordionGallery
             items={accordionItems}
             defaultIndex={0}
@@ -136,7 +136,7 @@ export const SpacesPage: React.FC = () => {
             overlayColor="#032517"
             textColor="#ffffff"
           />
-        </Fade>
+        </FadeIn>
       </section>
 
       {/* Momentos Inolvidables — InfiniteSpiral showcase */}
@@ -151,7 +151,7 @@ export const SpacesPage: React.FC = () => {
 
           {/* Left: InfiniteSpiral */}
           <div className="relative w-full md:w-2/3 h-full overflow-hidden order-2 md:order-1 mt-8 md:mt-0">
-            <Fade triggerOnce duration={1000} className="w-full h-full" style={{ width: '100%', height: '100%' }}>
+            <FadeIn triggerOnce duration={1} className="w-full h-full" style={{ width: '100%', height: '100%' }}>
               <InfiniteSpiral
                 items={spiralImages}
                 animationMode="all"
@@ -167,18 +167,18 @@ export const SpacesPage: React.FC = () => {
                 cardsPerTurn={6}
                 pauseOnHover
               />
-            </Fade>
+            </FadeIn>
           </div>
 
           {/* Right: Title */}
           <div className="text-center md:text-right z-10 md:w-1/3 pt-16 md:pt-0 shrink-0 order-1 md:order-2">
-            <Fade triggerOnce direction="up" cascade damping={0.15}>
+            <FadeIn triggerOnce direction="up" cascade damping={0.15}>
               {/* Decorative accent line */}
               <div className="hidden md:block w-16 h-[2px] bg-gradient-to-r from-primary/60 to-primary/0 ml-auto mb-6 rounded-full" />
               <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl text-primary leading-[1.05] tracking-tight">
                 Momentos<br /><em className="not-italic font-light opacity-90">inolvidables</em>
               </h2>
-            </Fade>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -186,7 +186,7 @@ export const SpacesPage: React.FC = () => {
       {/* CTA Section — links to /contacto */}
       <section className="py-24 md:py-32 bg-surface-container-low text-center px-6 border-t border-outline-variant/30 relative overflow-hidden">
         <div className="relative z-10">
-          <Fade triggerOnce direction="up" cascade damping={0.2}>
+          <FadeIn triggerOnce direction="up" cascade damping={0.2}>
             <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl text-primary mb-6">
               ¿Imaginás tu evento acá?
             </h2>
@@ -200,9 +200,10 @@ export const SpacesPage: React.FC = () => {
               <MessageCircle size={22} strokeWidth={2} />
               <span>Ir a Contacto</span>
             </Link>
-          </Fade>
+          </FadeIn>
         </div>
       </section>
     </main>
   );
 };
+
