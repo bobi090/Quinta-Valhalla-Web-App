@@ -59,6 +59,11 @@ export const HeroSection: React.FC = () => {
               <span className="font-serif text-xl sm:text-2xl md:text-3xl text-brand-cream font-normal italic tracking-tight drop-shadow-md">
                 Tu evento, en un entorno distinto
               </span>
+              <div className="flex items-center justify-center gap-2 text-xs sm:text-sm font-sans tracking-widest uppercase text-brand-gold font-medium mt-2">
+                <span>20 de Junio</span>
+                <span className="opacity-60">•</span>
+                <span>Zona Oeste</span>
+              </div>
             </FadeIn>
           </Slide>
         </div>

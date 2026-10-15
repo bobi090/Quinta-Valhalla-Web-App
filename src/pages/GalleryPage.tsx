@@ -15,7 +15,7 @@ export const GalleryPage: React.FC = () => {
     { id: 'todos', label: 'Todos' },
     { id: 'bodas', label: 'Bodas al Aire Libre' },
     { id: 'fiestas15', label: 'Fiestas de 15' },
-    { id: 'nocturnos', label: 'Eventos Nocturnos & Fogones' },
+    { id: 'nocturnos', label: 'Eventos Nocturnos' },
     { id: 'detalles', label: 'Detalles & Deco' },
     { id: 'interiores', label: 'Interiores & Salón' },
     { id: 'parque', label: 'Parque & Atardeceres' },

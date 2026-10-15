@@ -60,8 +60,8 @@ export const ContactPage: React.FC = () => {
             {/* Map Visual Frame */}
             <div className="lg:col-span-7 rounded-3xl overflow-hidden border border-secondary/30 shadow-md relative min-h-[380px] bg-surface-container">
               <iframe
-                title="Mapa de Ubicación Quinta Valhalla"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.8!2d-58.5886!3d-34.7654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc17f09b78a25%3A0x8c4f3d6e2a1b0c5d!2sQuinta%20Valhalla!5e0!3m2!1ses!2sar!4v1710000000000!5m2!1ses!2sar"
+                title="Mapa de Ubicación Quinta Valhalla en 20 de Junio"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.636671077755!2d-58.7237731!3d-34.775768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc3711e435919%3A0x3286a91f30639faf!2sQuinta%20Valhalla!5e0!3m2!1ses!2sar!4v1710000000000!5m2!1ses!2sar"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '380px' }}

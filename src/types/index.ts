@@ -50,7 +50,7 @@ export interface GalleryItem {
 export interface Review {
   id: string;
   hostName: string;
-  eventType: 'bodas' | 'quince' | 'cumpleanos' | 'familia' | 'egresados';
+  eventType: 'bodas' | 'quince' | 'dieciocho' | 'cumpleanos' | 'familia' | 'egresados';
   eventTypeLabel: string;
   eventDate: string;
   rating: number;

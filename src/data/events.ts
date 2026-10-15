@@ -14,8 +14,7 @@ export const EVENTS_DATA: EventType[] = [
     imageAlt: 'Celebración de casamiento al aire libre en Quinta Valhalla.',
     features: [
       'Espacio para ceremonia al aire libre en el parque.',
-      'Suite privada para preparación de los novios.',
-      'Salón cubierto climatizado para la recepción.',
+      'Salón cubierto para la recepción y fiesta.',
       'Piscina con deck para cóctel de bienvenida.',
       'Sectores exteriores para fotos y momentos al natural.'
     ],
@@ -37,11 +36,34 @@ export const EVENTS_DATA: EventType[] = [
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAYRnd3UoF_qK3Q4lA8x9Z1vW0bC_9z8y7x6w5v4u3t2s1r0qP9oInMlKjIhGfEdCbA',
     imageAlt: 'Celebración de 15 años en Quinta Valhalla con iluminación festiva.',
     features: [
-      'Suite privada para cambio de vestidos.',
-      'Pista de baile con iluminación.',
+      'Salón cubierto con pista de baile e iluminación.',
       'Espacio para barra de bebidas.',
       'Rincones fotográficos en el parque.',
       'Sectores de descanso al aire libre.'
+    ],
+    includedServices: [
+      'Consultá por los servicios incluidos en cada propuesta',
+      'Posibilidad de elegir tus propios proveedores',
+      'Acompañamiento en la planificación del evento'
+    ]
+  },
+  {
+    id: 'dieciocho',
+    title: '18 Años',
+    subtitle: 'El festejo de la mayoría de edad en un entorno con parque, pileta y pista',
+    badge: '18 Años',
+    quote: 'Una noche única para celebrar con tus amigos y familia en un predio exclusivo.',
+    description: 'Pista de baile, sonido, iluminación, pileta y espacios al aire libre para celebrar los 18 años con la energía que el momento merece. Opciones para fiestas nocturnas, eventos al atardecer o pool parties en temporada.',
+    capacity: 'Consultá por capacidad',
+    duration: 'Eventos de tarde o noche',
+    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCjX_nuEMNHUbAHMBjIPgNJ9t6sbz4gEkYj2UUGknyFgH8v-cSqZ0JPdXFTaClUK_M2jKokB-NBEnn05nwihHmoDLh-H6NhpHe0HeMGhleqSU8TLxeyiZ_q6Nja2awG_MkZcC3I3iewIDhKxyFSNeC2ziL-T2ddQq6M8Ja8sjW7tsigXn5M9Ob8sJ81bS-9ZF4kCURVdBOU_N5AUjkzUgmLsfREjquYTRnO7_Vu-nGhjj2KGt4fYDk',
+    imageAlt: 'Festejo de 18 años con iluminación nocturna en Quinta Valhalla.',
+    features: [
+      'Pista de baile en salón cubierto.',
+      'Iluminación para fiesta y sector de DJ.',
+      'Espacio para barra de bebidas y coctelería.',
+      'Pileta iluminada y parque para recepciones.',
+      'Sectores de descanso y livings al aire libre.'
     ],
     includedServices: [
       'Consultá por los servicios incluidos en cada propuesta',
@@ -77,14 +99,14 @@ export const EVENTS_DATA: EventType[] = [
     subtitle: 'Naturaleza y espacios para compartir sin salir de la ciudad',
     badge: 'Familiares',
     quote: 'Un espacio seguro y cómodo para reunir a todas las generaciones.',
-    description: 'Celebraciones de mediodía o tarde para bautismos, comuniones, aniversarios y encuentros familiares. Parque para que los chicos jueguen, quincho para el asado y pileta con cerco de seguridad.',
+    description: 'Celebraciones de mediodía o tarde para bautismos, comuniones, aniversarios y encuentros familiares. Parque para que los chicos jueguen, sector parrilla para el asado y pileta con cerco de seguridad.',
     capacity: 'Consultá por capacidad',
     duration: 'Turnos de día o atardecer',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA8c0rxCRF0p0N_ICG8WgaD5j1pcqRA7vEd3182Dk8aFxVDSEqVC7jGFxyvVffDiDTNjx9RHiQunrU5risMHxP28PFXw0GdjkPscBCd06Tox-yw66yWX-A5X3rltzUTpr-EURPzPB2HCmF3MqK5VDOC22JOEVtx9StDtpPXNdprs-CHg-etm3j4StKkTBGIuL9jj8cAQhNKATaMupxecpDVvBJVITLY_z90OO2Fk05Mhy4XQD9tfwI',
     imageAlt: 'Reunión familiar en los jardines de Quinta Valhalla.',
     features: [
       'Parque para recreación de chicos y familias.',
-      'Quincho con parrilla para asados.',
+      'Sector parrilla contiguo al salón para asados.',
       'Piscina con cerco de seguridad disponible.',
       'Sectores sombreados para todas las edades.'
     ],

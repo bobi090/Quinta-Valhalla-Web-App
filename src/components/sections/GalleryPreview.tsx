@@ -39,7 +39,7 @@ export const GalleryPreview: React.FC = () => {
             badge="Atmósferas & Celebraciones"
             badgeIcon="photo_library"
             title="Galería de Momentos"
-            subtitle="Cada rincón de Quinta Valhalla ha sido concebido para envolver las emociones más genuinas. Descubrí destellos de celebraciones donde la naturaleza, los árboles añejos y la luz dorada dan vida a recuerdos imperecederos."
+            subtitle="Recorré los rincones y la atmósfera de Quinta Valhalla a través de imágenes de nuestros espacios, celebraciones y ambientaciones."
           />
         </FadeIn>
 

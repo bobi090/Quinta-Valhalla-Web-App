@@ -49,7 +49,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     id: 'g-5',
     title: 'Evento Nocturno en el Parque',
     category: 'nocturnos',
-    categoryLabel: 'Eventos Nocturnos & Fogones',
+    categoryLabel: 'Eventos Nocturnos',
     kicker: 'Noche al Aire Libre',
     description: 'El parque iluminado con guirnaldas y sectores de descanso al aire libre para eventos nocturnos.',
     imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCjX_nuEMNHUbAHMBjIPgNJ9t6sbz4gEkYj2UUGknyFgH8v-cSqZ0JPdXFTaClUK_M2jKokB-NBEnn05nwihHmoDLh-H6NhpHe0HeMGhleqSU8TLxeyiZ_q6Nja2awG_MkZcC3I3iewIDhKxyFSNeC2ziL-T2ddQq6M8Ja8sjW7tsigXn5M9Ob8sJ81bS-9ZF4kCURVdBOU_N5AUjkzUgmLsfREjquYTRnO7_Vu-nGhjj2KGt4fYDk',
@@ -71,7 +71,7 @@ export const GALLERY_DATA: GalleryItem[] = [
     id: 'g-7',
     title: 'Piscina Iluminada de Noche',
     category: 'nocturnos',
-    categoryLabel: 'Eventos Nocturnos & Fogones',
+    categoryLabel: 'Eventos Nocturnos',
     kicker: 'Piscina Nocturna',
     description: 'La piscina iluminada durante un evento nocturno, con el deck preparado para cóctel y barra.',
     imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBzHQx-8enkzsBdXrMcbobt3ZdaYAN1thGv8HGNgJ-fuBieU62mJRX0uRFzc_t22-PG0Vz4HCNZClg77R7g-2jhWMens9xysDBx_Rj0xMjq09gxpUVscce80T6nONX72Y7H9VeJMnaMXeBMa8xbu8mJZ8k0_CPOnqjofCaJ-TI7HptfSwdBTZyxeWNKmcE__f5C1EQMU0AcqUM0WdVCga9nR6S1jjgf3KclaFnJxHJTTACpkeOCnQw',
@@ -79,25 +79,14 @@ export const GALLERY_DATA: GalleryItem[] = [
     aspectRatio: '4/3'
   },
   {
-    id: 'g-8',
-    title: 'Suite Privada para Anfitriones',
-    category: 'detalles',
-    categoryLabel: 'Detalles & Deco',
-    kicker: 'Preparación',
-    description: 'La suite privada del predio, un espacio para que los anfitriones se preparen antes de la celebración.',
-    imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDiDWLzfQpdKJ32HSFXOCdGd09DJlqd3j_p5tAt1eGXSk-WSxIDuqeZKrhaLAPUXc_cZl589aY8jytmzimlEEtqs0v4mkzXBFhA20tdJH8ThfbyUcW6Z1GFxv-hkWB11QZXJPyGAtK-BIlup6eg3vGa4w1VKq9za8lWNJSRkit7iCcEtCBBowtBFltkzgLKMFAVcDVPadBQ56Fo3FtoDwOrdElg1gHtxspfFq6z3UZVBL_brhsywv8',
-    imageAlt: 'Suite privada con tocador, espejo de cuerpo entero y sillón.',
-    aspectRatio: '4/5'
-  },
-  {
     id: 'g-9',
-    title: 'Quincho con Parrilla',
+    title: 'Sector Parrilla',
     category: 'interiores',
     categoryLabel: 'Interiores & Salón',
     kicker: 'Gastronomía',
-    description: 'El quincho techado con parrilla equipada, ideal para asados y propuestas gastronómicas informales.',
+    description: 'Sector con parrilla equipada, ideal para asados y propuestas gastronómicas.',
     imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBoJHe6PYq36E0iQ1EZiUnxn8tjRyouzTIuEa4hbxS6n2bO6H9Gcn9RITTEhsHp29nGtzh2cRbgpDNqseohPbE6uLjHOr0_QtTtOcpm8h8moI0ZSBDpOVr8d6qOaJO_6NUOjPHtAKAprHeHontBtphFBqjwYyGG0e54sOsetlqzpQX4rkDTGalsoEVUOlC6r2EO3SKgTTZSBURW2ZrtYB1T_7gCj2-ipxeg42u_OQRrZmRoB4Fiibw',
-    imageAlt: 'Quincho con parrilla encendida y brasas al rojo.',
+    imageAlt: 'Sector con parrilla encendida en Quinta Valhalla.',
     aspectRatio: '4/3'
   },
   {

@@ -13,8 +13,8 @@ Aplicación web completa, interactiva y responsive para **Quinta Valhalla Evento
 
 2. **Páginas y Rutas Completas**:
    - `/`: **Inicio & Presentación General** (Hero cinematográfico, "Conocé nuestra quinta", destacados de espacios y eventos, galería previa, pasos de reserva, testimonios y FAQs).
-   - `/espacios`: **Espacios & Instalaciones** (Ficha técnica y fotográfica de cada rincón: Salón Climatizado, Parque, Quincho, Pileta, etc.).
-   - `/eventos`: **Tipos de Eventos & Celebraciones** (Bodas, 15 años, cumpleaños, reuniones familiares, corporativos, egresados).
+   - `/espacios`: **Espacios & Instalaciones** (Ficha técnica y fotográfica de cada rincón: Salón Cubierto, Parque, Sector Parrilla, Pileta, etc.).
+   - `/eventos`: **Tipos de Eventos & Celebraciones** (Bodas, 15 años, 18 años, cumpleaños, reuniones familiares, egresados).
    - `/galeria`: **Galería Fotográfica** (Filtros dinámicos por categorías, cuadrícula interactiva y visualizador Lightbox modal).
    - `/consultar`: **Consulta de Disponibilidad** (Formulario optimizado para generar consultas directas por WhatsApp con datos precargados).
    - `/opiniones`: **Opiniones & Experiencias** (Métricas reales de Google Reviews, y enlaces directos).
@@ -112,7 +112,7 @@ npm run preview
 │   │   ├── SpacesPage.tsx           # Espacios
 │   │   ├── EventsPage.tsx           # Eventos
 │   │   ├── GalleryPage.tsx          # Galería
-│   │   ├── BookingPage.tsx          # Cotizador interactivo en 4 pasos
+│   │   ├── BookingPage.tsx          # Consulta de disponibilidad y fecha para eventos por WhatsApp
 │   │   ├── ReviewsPage.tsx          # Opiniones y formulario de reseña
 │   │   ├── ContactPage.tsx          # Contacto, cómo llegar y mapa
 │   │   └── NotFoundPage.tsx         # Error 404 personalizado

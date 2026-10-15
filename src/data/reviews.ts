@@ -6,7 +6,7 @@ export const REVIEWS_DATA: Review[] = [];
 
 export const REVIEWS_METRICS = {
   score: '4.7',
-  totalReviews: '206',
+  totalReviews: '+200',
   source: 'Google Reviews',
   googleReviewsUrl: 'https://maps.app.goo.gl/JpzxwfEedaeG4jv99'
 };

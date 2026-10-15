@@ -68,7 +68,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-4">
             <h4 className="font-serif text-lg font-semibold text-brand-gold">Sobre Nosotros</h4>
             <p className="font-sans text-sm text-brand-cream/80 leading-relaxed max-w-xl">
-              Nacimos hace mas de 10 años con el objetivo de brindar un espacio distinto a los salones cerrados. Atendido por sus dueños, el lugar ha retomado un rumbo que jamas imaginamos que llegariamos. Queremos agradecer por el cariño y el respeto que nos brindan dia a dia. Los esperamos para seguir creando momentos inolvidables.
+              Quinta Valhalla es un espacio para eventos ubicado en 20 de Junio, Zona Oeste, atendido con dedicación por sus propios dueños, Natalia y Leonardo. Un entorno natural con parque arbolado, pileta y salón cubierto para celebrar casamientos, 15 y 18 años, cumpleaños y momentos familiares inolvidables.
             </p>
           </div>
 

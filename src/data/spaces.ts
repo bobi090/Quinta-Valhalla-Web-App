@@ -6,21 +6,21 @@ export const SPACES_DATA: Space[] = [
     name: 'Salón Cubierto',
     tagline: 'Espacio Interior',
     category: 'Interiores & Salón',
-    description: 'Un espacio preparado para celebrar tanto de día como de noche, con la comodidad de contar con un sector interior climatizado para acompañar distintos formatos de evento.',
+    description: 'Un espacio preparado para celebrar tanto de día como de noche, con la comodidad de contar con un sector interior cubierto para acompañar distintos formatos de evento.',
     banquetCapacity: 0,
     cocktailCapacity: 0,
     mainImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD9Kg_GMtOgRVaYRuMWWilhKklj2EHarSJJRQ1LfxstTKrGqTgaXXT_kaIvkEhqyyiUaqOSBTqgPHo1NbFC3ZVK-5-cGhZrIndBF0GVwPfCZXEoiFUNzS5DMPAKUVDKtREyf2X-CtfpRwV2g-3USOpzOYnhVFFY-prKvLlz6ulOG8MLP-vsTePA1gZPmPYLYQi6YcdJTm-3U9kNMPGrM0m7r02qUJLXFGCYsFE0Uy92LkM3IS32ADQ',
     mainImageAlt: 'Salón cubierto de Quinta Valhalla con mesas decoradas e iluminación cálida.',
     features: [
-      'Salón climatizado frío/calor.',
+      'Salón cubierto con ventiladores y calefactores para las distintas épocas del año.',
       'Pista de baile con iluminación ambiental.',
-      'Sanitarios adaptados y accesibles.',
+      'Sanitarios completos, adaptados y accesibles.',
       'Espacio preparado para música en vivo y DJs.'
     ],
     specs: [
-      { label: 'Tipo', value: 'Salón cubierto climatizado' },
+      { label: 'Tipo', value: 'Salón cubierto' },
       { label: 'Formato', value: 'Banquete o cóctel' },
-      { label: 'Climatización', value: 'Frío/Calor' },
+      { label: 'Climatización', value: 'Ventiladores y calefactores' },
       { label: 'Uso', value: 'Eventos de día y noche' }
     ],
     galleryImages: [
@@ -39,24 +39,25 @@ export const SPACES_DATA: Space[] = [
   {
     id: 'parque-ceremonia',
     name: 'Parque y Espacio para Ceremonias',
-    tagline: 'Ceremonias al Aire Libre',
+    tagline: 'Ceremonias y Recreación al Aire Libre',
     category: 'Parque & Exteriores',
-    description: 'Amplios espacios verdes para ceremonias al aire libre, recepciones y momentos al natural. Un entorno rodeado de vegetación ideal para celebraciones de día y al atardecer.',
+    description: 'Amplios espacios verdes arbolados para ceremonias al aire libre, recepciones, livings y recreación. Cuenta con juegos infantiles y canchitas para el disfrute de chicos y grandes.',
     banquetCapacity: 0,
     cocktailCapacity: 0,
     mainImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBvHy5ogYx7AhID-gmIrmu1Cfw-eNSJ8YmzhAqErGASCIkkcp7k4anPLOws7lGdlRhC1LYG4OBxesmVuZ4FrNzu4cs6jaGmKK5a-dnapPsCOAqoeqXtfCya3Q3oKJ5Ays64EnYT2ECqRgljE8yV9uYzUiJVQTYykGEqy_A4ijBdr3KsA58sbBITunYHXJ3d-SPWRzvauAK0ws3KSUzQK8xGH9J_agq4uWzheMpf-CZ14M-SnET0FIU',
     mainImageAlt: 'Espacio para ceremonias al aire libre en Quinta Valhalla rodeado de árboles.',
     features: [
       'Espacio para ceremonias civiles o simbólicas.',
-      'Senderos y áreas verdes.',
-      'Sector versátil para livings al aire libre.',
-      'Sombra natural gracias a la vegetación del predio.'
+      'Senderos y amplias áreas verdes arboladas.',
+      'Juegos infantiles y de plaza para los más chicos.',
+      'Canchita de fútbol, espacio para vóley y aro de básquet.',
+      'Sector versátil para livings al aire libre con sombra natural.'
     ],
     specs: [
-      { label: 'Tipo', value: 'Amplios espacios verdes' },
-      { label: 'Uso', value: 'Ceremonias y recepciones' },
-      { label: 'Iluminación', value: 'Guirnaldas y farolas' },
-      { label: 'Accesibilidad', value: 'Caminos transitables' }
+      { label: 'Tipo', value: 'Amplios espacios verdes arbolados' },
+      { label: 'Uso', value: 'Ceremonias, recepciones y recreación' },
+      { label: 'Recreación', value: 'Juegos de plaza y deportes' },
+      { label: 'Iluminación', value: 'Guirnaldas y farolas nocturnas' }
     ],
     galleryImages: [
       {
@@ -72,23 +73,23 @@ export const SPACES_DATA: Space[] = [
     ]
   },
   {
-    id: 'quincho-parrilla',
-    name: 'Quincho y Parrilla',
-    tagline: 'Gastronomía al Aire Libre',
-    category: 'Quincho & Parrilla',
-    description: 'Sector techado con parrilla para propuestas gastronómicas más relajadas. Ideal para asados, almuerzos criollos y recepciones informales.',
+    id: 'sector-parrilla',
+    name: 'Sector Parrilla',
+    tagline: 'Gastronomía',
+    category: 'Parrilla',
+    description: 'Sector con parrilla contiguo al salón, ideal para asados y propuestas gastronómicas que complementan la celebración.',
     banquetCapacity: 0,
     cocktailCapacity: 0,
     mainImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBoJHe6PYq36E0iQ1EZiUnxn8tjRyouzTIuEa4hbxS6n2bO6H9Gcn9RITTEhsHp29nGtzh2cRbgpDNqseohPbE6uLjHOr0_QtTtOcpm8h8moI0ZSBDpOVr8d6qOaJO_6NUOjPHtAKAprHeHontBtphFBqjwYyGG0e54sOsetlqzpQX4rkDTGalsoEVUOlC6r2EO3SKgTTZSBURW2ZrtYB1T_7gCj2-ipxeg42u_OQRrZmRoB4Fiibw',
-    mainImageAlt: 'Quincho con parrilla en Quinta Valhalla.',
+    mainImageAlt: 'Sector de parrilla en Quinta Valhalla.',
     features: [
       'Parrilla equipada.',
-      'Sector techado para eventos en cualquier clima.',
+      'Sector contiguo al salón para mayor comodidad.',
       'Mesas y espacio de apoyo gastronómico.',
-      'Conexión directa con el parque.'
+      'Conexión fluida con el parque.'
     ],
     specs: [
-      { label: 'Tipo', value: 'Sector semicubierto' },
+      { label: 'Tipo', value: 'Sector contiguo al salón' },
       { label: 'Equipamiento', value: 'Parrilla' },
       { label: 'Uso', value: 'Asados y recepciones' },
       { label: 'Estilo', value: 'Informal y relajado' }
@@ -96,12 +97,12 @@ export const SPACES_DATA: Space[] = [
     galleryImages: [
       {
         url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCa-8s5jZpiFroa1pGRdkQKh97nBNywT7dDHUgtv61wdZctZKEfM61-AeOCPqUCPbyLUT-t88nfb3quCCYJEkiRMuZWGQgEh14A0fyK5LucemFAmM9upDx6NCV6ii3sZaviIDbDavC_QZB6Ahr0ObdWrMBLrn36dUrGQLMmR0XhnkRNSPmrd4SMJpOKh0KAj0V6RSh_-rnSQ7h_zoECnOdCg24MPBQYIo6QNvIsdZjZU8Kp0j0kaBk',
-        alt: 'Parrilla encendida en el quincho',
+        alt: 'Parrilla encendida en Quinta Valhalla',
         caption: 'Parrilla en uso'
       },
       {
         url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAWe4CvWldJvW29_HMnIq0BAHr8ibSUC--zzNiT_fHRdlhXZDXzrSe8zU5UXcPXtY6N84KV8_U-DEnWqnLQVLb_HJ7hfIFI_6KhX_Xqv_FWU3IERlziV5bnD1jLQBFR8MXVGrwU2fI4jFcwASLNNSTGju69PnmOag1WeKATC5jqEVRZYhIL79fiLw0JJW5_UUPTIqOS51TP2VYuYtxtj98dmoKqVFqnOnjC5DQLrz93rQ4-c6NfBaQ',
-        alt: 'Barra de aperitivos junto al quincho',
+        alt: 'Barra de aperitivos junto a la parrilla',
         caption: 'Barra de tragos y aperitivos'
       }
     ]
@@ -111,22 +112,22 @@ export const SPACES_DATA: Space[] = [
     name: 'Piscina',
     tagline: 'Eventos de Temporada',
     category: 'Piscina & Exteriores',
-    description: 'Piscina con deck para darle otro estilo a los eventos de temporada. Ideal como espacio de recepción y para momentos más relajados al aire libre.',
+    description: 'Piscina de grandes dimensiones con deck de madera para darle un estilo único a los eventos de temporada. Ideal para celebraciones de día, pool parties y recepciones distendidas al atardecer.',
     banquetCapacity: 0,
     cocktailCapacity: 0,
     mainImage: 'https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=1200&auto=format&fit=crop',
     mainImageAlt: 'Piscina con deck en Quinta Valhalla.',
     features: [
-      'Piscina con agua cristalina.',
-      'Deck con áreas de sombra.',
-      'Espacio para recepciones y fotos.',
-      'Cerco de protección disponible para eventos con niños.'
+      'Piscina de grandes dimensiones con deck de madera.',
+      'Deck con áreas de sombra y livings exteriores.',
+      'Espacio para barra de tragos, recepciones y fotos.',
+      'Cerco perimetral de protección disponible para eventos con niños.'
     ],
     specs: [
-      { label: 'Tipo', value: 'Piscina con deck' },
-      { label: 'Uso', value: 'Recepciones y relax' },
+      { label: 'Tipo', value: 'Piscina con deck de madera' },
+      { label: 'Uso', value: 'Pool parties, recepciones y relax' },
       { label: 'Seguridad', value: 'Cerco perimetral disponible' },
-      { label: 'Temporada', value: 'Eventos de primavera/verano' }
+      { label: 'Temporada', value: 'Eventos de primavera y verano' }
     ],
     galleryImages: [
       {
@@ -138,41 +139,6 @@ export const SPACES_DATA: Space[] = [
         url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB8PMjmx8A3nLU3ngSr25vWCRPUtuRd9m66MvgtEzYx9oigabVqkzhKydfYbDDvx-lhqZUQlLz-eORlBaSK1_4rmrZOcGW7JGSa6Ug-m8nrbdM1Tj5xraLAAo6PRcZV1-t7RMK90RchdZ82qXswvYUl18FjuHoi7c-6MXdI3PPr1V38niH2rnVpz_ulHLy6gYZHffts7j6OHgxqvkxolsWjNzAUhTjtDM22l11ubBqGllU9a0Jw7PQ',
         alt: 'Barra de coctelería junto a la piscina',
         caption: 'Barra de coctelería junto a la piscina'
-      }
-    ]
-  },
-  {
-    id: 'suite-privada',
-    name: 'Suite Privada',
-    tagline: 'Espacio Reservado',
-    category: 'Suite',
-    description: 'Un espacio reservado dentro del predio pensado para que los anfitriones puedan prepararse, cambiarse y descansar antes y durante la celebración.',
-    banquetCapacity: 0,
-    cocktailCapacity: 0,
-    mainImage: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDiDWLzfQpdKJ32HSFXOCdGd09DJlqd3j_p5tAt1eGXSk-WSxIDuqeZKrhaLAPUXc_cZl589aY8jytmzimlEEtqs0v4mkzXBFhA20tdJH8ThfbyUcW6Z1GFxv-hkWB11QZXJPyGAtK-BIlup6eg3vGa4w1VKq9za8lWNJSRkit7iCcEtCBBowtBFltkzgLKMFAVcDVPadBQ56Fo3FtoDwOrdElg1gHtxspfFq6z3UZVBL_brhsywv8',
-    mainImageAlt: 'Suite privada para anfitriones en Quinta Valhalla.',
-    features: [
-      'Tocador para maquillaje y estilismo.',
-      'Espejo de cuerpo entero.',
-      'Baño privado.',
-      'Espacio climatizado.'
-    ],
-    specs: [
-      { label: 'Tipo', value: 'Espacio privado para anfitriones' },
-      { label: 'Acceso', value: 'Reservado para anfitriones' },
-      { label: 'Comodidades', value: 'Baño privado, tocador' },
-      { label: 'Uso', value: 'Preparación y descanso' }
-    ],
-    galleryImages: [
-      {
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBNzyTrlJuVNODybNLTEOo7s7q0ftbd2Us_fGDGRblneuKTNV092szp1-KmAIbtoER6URK8r10HkdOcquPLPwbn0s4GK9amQ9TkaQWR8lEskuTtmZuYmpRtR8-XxaX2Q3ZoJZX6FC5L-bW1YAi-n1rN6-WoAL4fOskdrnnZSM6RPWobVEhh0enUKOouan-lkL6AqMVaEwrvQv1tQJkoMOwCAmHS2l-Aa3dFJZIZI3hO_r67SM4U00w',
-        alt: 'Tocador y estación de peinado',
-        caption: 'Tocador y estación de maquillaje'
-      },
-      {
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuABt9MBIXZK6i78GB6OJ6bV7JQ5s8r6GOSArQCVsXhbqq2rckRT3Upk1Y2uD112mne8NKuMh5tBDtLAFJzuYPgIbkIy0SA5oQhp11zts9ZCPfuJhKrhrGaTH4O42kFL2KOBxujala0FweDSgclDH9aGyvTIkuaTYLXeZZvrlLRMg2_6ORcz2Gl9G0RBrMt1BdAmi1U0_y9lTyZjt4uiorFEuOkO-oDE46PtnR3l0uM7WO95EQY-f34',
-        alt: 'Baño privado de la suite',
-        caption: 'Baño privado en suite'
       }
     ]
   },

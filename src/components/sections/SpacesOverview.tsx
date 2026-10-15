@@ -25,7 +25,7 @@ export const SpacesOverview: React.FC = () => {
             <div className="p-3 border-r border-outline-variant/30 last:border-r-0">
               <p className="font-serif text-2xl md:text-3xl text-primary font-semibold">Salón</p>
               <p className="font-sans text-xs uppercase tracking-wider text-secondary font-medium mt-1">
-                Cubierto y Climatizado
+                Cubierto
               </p>
             </div>
             <div className="p-3 md:border-r border-outline-variant/30">
@@ -37,13 +37,13 @@ export const SpacesOverview: React.FC = () => {
             <div className="p-3 border-r border-outline-variant/30">
               <p className="font-serif text-2xl md:text-3xl text-primary font-semibold">Pileta</p>
               <p className="font-sans text-xs uppercase tracking-wider text-secondary font-medium mt-1">
-                Con Deck y Solárium
+                Con Deck de Madera
               </p>
             </div>
             <div className="p-3">
-              <p className="font-serif text-2xl md:text-3xl text-primary font-semibold">Quincho</p>
+              <p className="font-serif text-2xl md:text-3xl text-primary font-semibold">Parrilla</p>
               <p className="font-sans text-xs uppercase tracking-wider text-secondary font-medium mt-1">
-                Parrilla Equipada
+                Sector Contiguo al Salón
               </p>
             </div>
           </div>

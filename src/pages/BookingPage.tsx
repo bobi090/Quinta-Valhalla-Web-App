@@ -26,6 +26,7 @@ export const BookingPage: React.FC = () => {
   const eventTypes: { label: string; icon: LucideIcon }[] = [
     { label: 'Casamiento', icon: Heart },
     { label: '15 Años', icon: PartyPopper },
+    { label: '18 Años', icon: Sparkles },
     { label: 'Cumpleaños', icon: Cake },
     { label: 'Reunión Familiar', icon: Users },
     { label: 'Egresados', icon: GraduationCap },
@@ -237,7 +238,7 @@ export const BookingPage: React.FC = () => {
 
               <div className="mt-6 pt-4 border-t border-outline-variant/25">
                 <p className="text-[11px] text-center text-outline">
-                  Atención directa con coordinadores de Quinta Valhalla
+                  Atención directa de Natalia y Leonardo, dueños de Quinta Valhalla
                 </p>
               </div>
             </div>
